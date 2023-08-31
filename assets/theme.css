@@ -810,7 +810,7 @@ img[data-rimg=lazy], img[data-rimg=loading] {
   background-repeat: no-repeat;
   text-align: left;
   direction: ltr;
-  *line-height: 0;
+  /* *line-height: 0; */
 }
 
 .ir br {
@@ -856,7 +856,7 @@ img[data-rimg=lazy], img[data-rimg=loading] {
 }
 
 .clearfix {
-  *zoom: 1;
+  /* *zoom: 1; */
 }
 
 @media print {
