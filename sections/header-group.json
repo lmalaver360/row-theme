@@ -7,7 +7,7 @@
       "settings": {
         "show_announcement": true,
         "announcement_home_only": true,
-        "announcement_text": "github",
+        "announcement_text": "github local",
         "announcement_text_mobile": "Use less text on mobile!",
         "announcement_link": "",
         "announcement_color": "#ffffff",
