@@ -960,7 +960,8 @@ html .shopify-payment-button .shopify-payment-button__button,
 .slide .content .call-to-action,
 .countdown-timer__caption-button,
 .action-button.submit,
-.action-button.unavailable {
+.action-button.unavailable,
+.btn-solid {
   font-family: {{ fonts_font_headings_secondary_family }}
   ;
   font-style: {{ fonts_font_headings_secondary_style }}
@@ -970,13 +971,11 @@ html .shopify-payment-button .shopify-payment-button__button,
   position: relative;
   display: inline-block;
   padding: 10px 18px;
-  font-size: 13px;
-  line-height: 1.5;
-  letter-spacing: 0.08em;
+  font-size: 14px;
+  line-height: normal;
   color: {{ settings.button-text-colour }}
   ;
   text-align: center;
-  text-transform: uppercase;
   cursor: pointer;
   background-color: {{ settings.accent-colour }}
   ;
@@ -1007,13 +1006,32 @@ html .shopify-payment-button .shopify-payment-button__button:hover,
 .customer.addresses .edit-add-address .submit-wrap .action-button:hover,
 .customer .account-form .submit-button:hover,
 .slide .content .call-to-action:hover,
-.countdown-timer__caption-button:hover {
+.countdown-timer__caption-button:hover,
+.btn-solid:hover {
   color: {{ settings.button-text-colour }}
   ;
   background-color: {{ accent_color_hover }}
   ;
   border-color: {{ accent_color_hover }}
   ;
+}
+
+.btn-solid {
+  min-width: 130px
+}
+
+.btn-solid--secondary {
+  background-color: #fff;
+  border-color: {{ settings.accent-colour }}
+  ;
+  color: {{ settings.accent-colour }}
+  ;
+}
+
+.btn-solid--tertiary {
+  background-color: #43403B;
+  border: none;
+  color: #fff;
 }
 
 .age-gate__confirm_btn,

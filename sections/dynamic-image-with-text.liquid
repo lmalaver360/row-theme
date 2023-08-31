@@ -23,6 +23,11 @@
 {%- assign heading = section.settings.title | escape -%}
 {%- assign content = section.settings.content -%}
 {%- assign alignment = section.settings.alignment -%}
+{%- assign logo = section.settings.logo -%}
+
+{%- assign button_label = section.settings.button_label -%}
+{%- assign button_link = section.settings.button_link -%}
+{%- assign button_style = section.settings.button_style -%}
 
 {% if heading or image %}
   {%- capture image_tag -%}
@@ -42,23 +47,38 @@
   {% assign placeholder_style = 'collection-2' %}
   {% assign color = settings.accent-colour %}
   {% assign color_string = 'fill="' | append: color | append: '" xmlns' %}
+
   {% capture demo_image %}
     {%- render 'placeholder_svg_uri', placeholder: placeholder_style, color_string: color_string -%}{% endcapture %}
 
+  {%- capture image_logo -%}
+    {%- if section.settings.logo != blank -%}
+      {%
+         render 'rimg'
+       img: logo,
+       alt: logo,
+       size: '99x104',
+       lazy: true,
+       focal_point: logo.presentation.focal_point, %}
+    {%- else -%}
+      {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- endif -%}
+  {%- endcapture -%}
+
   <section class="
-                              home-section
-                              clearfix
-                              picture-block
-                              picture-block-{{ alignment }}
-                              picture-block--desktop-height-{{ section.settings.desktop_height }}
-                              picture-block--mobile-height-{{ section.settings.mobile_height }}
-                              {% if section.settings.parallax %}
-                                picture-block--parallax
-                              {% endif %}
-                              {% if section.settings.margin == 'none' %}
-                                picture-block-no-margin
-                              {% endif %}
-                            ">
+                                          home-section
+                                          clearfix
+                                          picture-block
+                                          picture-block-{{ alignment }}
+                                          picture-block--desktop-height-{{ section.settings.desktop_height }}
+                                          picture-block--mobile-height-{{ section.settings.mobile_height }}
+                                          {% if section.settings.parallax %}
+                                            picture-block--parallax
+                                          {% endif %}
+                                          {% if section.settings.margin == 'none' %}
+                                            picture-block-no-margin
+                                          {% endif %}
+                                        ">
     <div class="picture-block-image">
       {{ image_tag }}
     </div>
@@ -66,6 +86,9 @@
     <div class="picture-block-wrapper" style="background-color: {{ section.settings.background-colour }}">
       <div class="centering-wrapper">
         <div class="picture-block-content">
+          {% if section.settings.logo %}
+            {{ image_logo }}
+          {% endif %}
           <h2 class="picture-block-heading">
             {% if heading != blank %}
               {{ heading }}
@@ -76,6 +99,17 @@
             {% if content != blank %}
               {{ content }}</p>
           {% endif %}
+
+          {% if button_label != blank %}
+            <a class="
+                                                                            btn-solid
+                                                                            btn-solid--{{ button_style }}
+                                                                          " href="{{ button_link }}">
+              {{ button_label | escape }}
+            </a>
+          {% endif %}
+
+
         </div>
       </div>
     </div>
@@ -200,6 +234,10 @@
         "type": "header",
         "content": "Text"
       }, {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Image"
+      }, {
         "type": "color",
         "id": "background-colour",
         "label": "Background block text",
@@ -214,6 +252,32 @@
         "id": "content",
         "label": "Text",
         "default": "<p>Say a bit about your brand, a specific product, or promotion.</p>"
+      }, {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      }, {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label",
+        "default": "Button"
+      }, {
+        "type": "select",
+        "id": "button_style",
+        "label": "Button style",
+        "options": [
+          {
+            "value": "primary",
+            "label": "Primary"
+          }, {
+            "value": "secondary",
+            "label": "Secondary"
+          }, {
+            "value": "tertiary",
+            "label": "Tertiary"
+          }
+        ],
+        "default": "tertiary"
       }
     ],
     "presets": [

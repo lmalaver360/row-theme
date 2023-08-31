@@ -603,26 +603,24 @@ img[data-rimg=lazy], img[data-rimg=loading] {
   animation-direction: alternate;
 }
 
-.age-gate__confirm_btn, html .shopify-payment-button .shopify-payment-button__button--unbranded, .collections .collection .browse, .featured-collections .collection .browse, .cart-mini__continue-shopping, .subcollection-link, .pxs-newsletter-form-button, .predictive-search__footer-button, .newsletter-wrap .submit, .shopify-challenge__button, .action-button, .promo-block--button, .promo-block--secondary .promo-block--button, .product-card-interaction, .disclosure__submit, .cart-mini-actions .action-button, html .shopify-payment-button .shopify-payment-button__button, .product-form-has-spb .submit, .product-form .product-submit, .password-page-field-wrap .submit, .cart-submit, .cart-update, .customer.addresses .edit-add-address .submit-wrap .action-button, .customer .account-form .submit-button, .slide .content .call-to-action, .countdown-timer__caption-button, .action-button.submit, .action-button.unavailable {
+.age-gate__confirm_btn, html .shopify-payment-button .shopify-payment-button__button--unbranded, .collections .collection .browse, .featured-collections .collection .browse, .cart-mini__continue-shopping, .subcollection-link, .pxs-newsletter-form-button, .predictive-search__footer-button, .newsletter-wrap .submit, .shopify-challenge__button, .action-button, .promo-block--button, .promo-block--secondary .promo-block--button, .product-card-interaction, .disclosure__submit, .cart-mini-actions .action-button, html .shopify-payment-button .shopify-payment-button__button, .product-form-has-spb .submit, .product-form .product-submit, .password-page-field-wrap .submit, .cart-submit, .cart-update, .customer.addresses .edit-add-address .submit-wrap .action-button, .customer .account-form .submit-button, .slide .content .call-to-action, .countdown-timer__caption-button, .action-button.submit, .action-button.unavailable, .btn-solid {
   font-family: "ITC Stone Sans II",sans-serif;
   font-style: normal;
   font-weight: 300;
   position: relative;
   display: inline-block;
   padding: 10px 18px;
-  font-size: 13px;
-  line-height: 1.5;
-  letter-spacing: 0.08em;
+  font-size: 14px;
+  line-height: normal;
   color: #ffffff;
   text-align: center;
-  text-transform: uppercase;
   cursor: pointer;
   background-color: #b7a490;
   border: 1px solid #b7a490;
   border-radius: 0;
   transition: 0.15s cubic-bezier(0.4, 0, 0.2, 1) background-color, 0.15s cubic-bezier(0.4, 0, 0.2, 1) border-color;
 }
-.age-gate__confirm_btn:hover, html .shopify-payment-button .shopify-payment-button__button--unbranded:hover, .collections .collection .browse:hover, .featured-collections .collection .browse:hover, .cart-mini__continue-shopping:hover, .subcollection-link:hover, .pxs-newsletter-form-button:hover, .predictive-search__footer-button:hover, .newsletter-wrap .submit:hover, .shopify-challenge__button:hover, .action-button:hover, .promo-block--button:hover, .product-card-interaction:hover, .disclosure__submit:hover, html .shopify-payment-button .shopify-payment-button__button:hover, .product-form-has-spb .submit:hover, .product-form .product-submit:hover, .password-page-field-wrap .submit:hover, .cart-submit:hover, .cart-update:hover, .customer.addresses .edit-add-address .submit-wrap .action-button:hover, .customer .account-form .submit-button:hover, .slide .content .call-to-action:hover, .countdown-timer__caption-button:hover {
+.age-gate__confirm_btn:hover, html .shopify-payment-button .shopify-payment-button__button--unbranded:hover, .collections .collection .browse:hover, .featured-collections .collection .browse:hover, .cart-mini__continue-shopping:hover, .subcollection-link:hover, .pxs-newsletter-form-button:hover, .predictive-search__footer-button:hover, .newsletter-wrap .submit:hover, .shopify-challenge__button:hover, .action-button:hover, .promo-block--button:hover, .product-card-interaction:hover, .disclosure__submit:hover, html .shopify-payment-button .shopify-payment-button__button:hover, .product-form-has-spb .submit:hover, .product-form .product-submit:hover, .password-page-field-wrap .submit:hover, .cart-submit:hover, .cart-update:hover, .customer.addresses .edit-add-address .submit-wrap .action-button:hover, .customer .account-form .submit-button:hover, .slide .content .call-to-action:hover, .countdown-timer__caption-button:hover, .btn-solid:hover {
   color: #ffffff;
   background-color: 
 
@@ -659,6 +657,23 @@ img[data-rimg=lazy], img[data-rimg=loading] {
 
 ;
 }
+
+.btn-solid{
+  min-width: 130px
+
+}
+.btn-solid--secondary {
+  background-color: #fff;
+  border-color: #b7a490;
+  color: #b7a490;
+}
+
+.btn-solid--tertiary {
+  background-color: #43403B;
+  border: none;
+  color: #fff;
+}
+
 
 .age-gate__confirm_btn, html .shopify-payment-button .shopify-payment-button__button, .product-form-has-spb .submit, .product-form .product-submit, .password-page-field-wrap .submit, .cart-submit, .cart-update, .customer.addresses .edit-add-address .submit-wrap .action-button, .customer .account-form .submit-button, .slide .content .call-to-action, .countdown-timer__caption-button, .action-button.submit, .action-button.unavailable {
   padding: 15px 24px;
