@@ -9,9 +9,13 @@
         "desktop_height": "natural",
         "mobile_height": "natural",
         "parallax": false,
+        "logo": "shopify:\/\/shop_images\/Group_17.svg",
         "background-colour": "#c1cdaa",
         "title": "A COLLECTION OF CURIOUS OBJECTS.",
-        "content": ""
+        "content": "",
+        "button_link": "",
+        "button_label": "Button",
+        "button_style": "tertiary"
       }
     },
     "dynamic-logo-list-1": {
