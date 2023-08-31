@@ -3530,13 +3530,12 @@ mark {
 .header-minimal {
   display: table;
   width: 100%;
-  min-height: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
+  min-height: 98px;
+  padding-left: 35px;
+  padding-right: 35px;
 
-  display: grid;
-  grid-template-columns: max-content 1fr max-content;
-  background: pink;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .main-header--centered .header-minimal {
@@ -3690,12 +3689,12 @@ mark {
 }
 .main-header--minimal:not(.main-header--centered) .store-title {
   padding-left: 0;
-  margin: 30px 0;
+  margin: 0;
 }
 @media screen and (min-width: 960px) {
   .main-header--minimal:not(.main-header--centered) .store-title {
-    padding-right: 20px;
-    padding-left: 10px;
+    /* padding-right: 20px;
+    padding-left: 10px; */
     text-align: left;
   }
 }
@@ -4405,7 +4404,8 @@ mark {
   align-items: center;
   justify-content: space-between;
   padding: 20px 24px;
-  font-size: 13px;
+  font-size: 18px;
+  font-weight: 400;
   color: {{ settings.nav-link-colour }}
   ;
   transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
