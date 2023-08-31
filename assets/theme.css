@@ -12859,8 +12859,8 @@ noscript .disclosure-list--visible {
   font-family: "Mariposa Sans",sans-serif;
   font-style: normal;
   font-weight: 400;
-  margin-bottom: 30px;
-  font-size: 84px;
+  margin: 50px 0 30px;
+  font-size: clamp(48px, 5vw, 84px);
   line-height: normal;
   color: #052422;
 }
