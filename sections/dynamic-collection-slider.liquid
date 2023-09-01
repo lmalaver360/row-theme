@@ -1,6 +1,6 @@
 <script
   type="application/json"
-  data-section-type="dynamic-collection-slider"
+  data-section-type="dynamic-slideshow"
   data-section-id="{{ section.id }}"
   data-section-data
 >
@@ -29,7 +29,8 @@
 <div
   data-section-id="{{ section.id }}">
   <section
-    class="collectionSlider featured-collection clearfix slideshow">
+    class="collectionSlider featured-collection clearfix slideshow"
+    >
     <div
       class="collectionSlider__container">
       <div
@@ -49,12 +50,13 @@
           <span class="next">
             {% render 'icon' with 'arrow-thin-right' %}
           </span>
-          <div class="slideshow--viewport">
+          <ul class="jump-to-slide"></ul>
+
               
                       {% if productsCollection != blank %}
-                          <ul
-                              class="product-list row-of-{{ productsPerRow }} 
-                              ">
+                          <div
+                              class="product-list  slideshow--viewport
+                              " data-slideshow-viewport>
                               {% for product in collections[productsCollection].products  %}
                                 <div class="slide
                                 {% if forloop.index == 1 %}
@@ -68,14 +70,15 @@
                                     onboarding: false,
                                     
                                     %}
+                                    <div class="image-wrap"></div>
 
                                 </div>
                               {% endfor %}
-                          </ul>
+                          </div>
                           {% else %}
                           <div
-                              class="product-list row-of-{{ productsPerRow }} 
-                              ">
+                              class="product-list  slideshow--viewport
+                              " data-slideshow-viewport>
                               {% for i in (1..4) %}
                                 <div class="slide
                                 {% if forloop.index == 1 %}
@@ -86,12 +89,13 @@
                                         render 'product-item',
                                         forloop: forloop,
                                         onboarding: true, %}
+                                    <div class="image-wrap"></div>
+
                                 </div>
                               {% endfor %}
                           </div>
                       {% endif %}
 
-          </div>
         
         </div>
 
