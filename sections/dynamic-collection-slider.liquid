@@ -1,0 +1,29 @@
+<div
+  data-section-id="{{ section.id }}">
+  <section
+    class="collection-slider">
+    <h2>slider</h2>
+  </section>
+</div>
+
+{% schema %}
+  {
+    "name": "Feature slider collection",
+    "settings": [
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Collection"
+      }
+    ],
+    "presets": [
+      {
+        "category": "Collection",
+        "name": "Featured slider collection"
+      }
+    ],
+    "disabled_on": {
+      "groups": ["*"]
+    }
+  }
+{% endschema %}
