@@ -1,7 +1,16 @@
+<script
+  type="application/json"
+  data-section-type="dynamic-collection-slider"
+  data-section-id="{{ section.id }}"
+  data-section-data
+>
+  
+</script>
+
 {%- assign image = section.settings.image -%}
 {%- assign heading = section.settings.title | escape -%}
 {%- assign subtitle = section.settings.subtitle | escape -%}
-
+{%- assign productsCollection = section.settings.collection -%}
 
 {%- capture image_tag -%}
   {%- if section.settings.image != blank -%}
@@ -20,7 +29,7 @@
 <div
   data-section-id="{{ section.id }}">
   <section
-    class="collectionSlider featured-collection clearfix">
+    class="collectionSlider featured-collection clearfix slideshow">
     <div
       class="collectionSlider__container">
       <div
@@ -32,7 +41,59 @@
         {{ image_tag }}
       </div>
       <div
-        class="collectionSlider__slider"></div>
+        class="collectionSlider__slider">
+            <span class="prev">
+            {% render 'icon' with 'arrow-thin-left' %}
+          </span>
+        
+          <span class="next">
+            {% render 'icon' with 'arrow-thin-right' %}
+          </span>
+          <div class="slideshow--viewport">
+              
+                      {% if productsCollection != blank %}
+                          <ul
+                              class="product-list row-of-{{ productsPerRow }} 
+                              ">
+                              {% for product in collections[productsCollection].products  %}
+                                <div class="slide
+                                {% if forloop.index == 1 %}
+                                  active
+                                {% endif %}">
+                                {%
+                                    render 'product-item',
+                                    product: product,
+                                    collection: productsCollection,
+                                    forloop: forloop,
+                                    onboarding: false,
+                                    
+                                    %}
+
+                                </div>
+                              {% endfor %}
+                          </ul>
+                          {% else %}
+                          <div
+                              class="product-list row-of-{{ productsPerRow }} 
+                              ">
+                              {% for i in (1..4) %}
+                                <div class="slide
+                                {% if forloop.index == 1 %}
+                                  active
+                                {% endif %}">
+
+                                    {%
+                                        render 'product-item',
+                                        forloop: forloop,
+                                        onboarding: true, %}
+                                </div>
+                              {% endfor %}
+                          </div>
+                      {% endif %}
+
+          </div>
+        
+        </div>
 
     </div>
   </section>
