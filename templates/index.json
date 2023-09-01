@@ -76,6 +76,12 @@
         "products_per_row": 4
       }
     },
+    "ecebc0be-7de2-451c-9746-2f9bca83edbf": {
+      "type": "dynamic-collection-slider",
+      "settings": {
+        "collection": ""
+      }
+    },
     "5b040336-f51e-478f-9fac-23fe965bc5f8": {
       "type": "pxs-newsletter",
       "settings": {
@@ -90,6 +96,7 @@
     "dynamic-image-with-text-1",
     "dynamic-logo-list-1",
     "dynamic-collection-1",
+    "ecebc0be-7de2-451c-9746-2f9bca83edbf",
     "5b040336-f51e-478f-9fac-23fe965bc5f8"
   ]
 }
