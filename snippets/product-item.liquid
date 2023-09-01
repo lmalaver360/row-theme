@@ -194,6 +194,41 @@
   </div>
 {% endcapture %}
 
+{% capture button-add-card %}
+<button class="
+                btn-solid--secondary
+                product-card-interaction
+                product-card-interaction-addtocart
+              " {% unless selected_variant.available %} disabled {% endunless %} {% if onboarding or
+  template.name=='password' %} disabled {% endif %} data-product-card-interaction-addtocart
+  data-product-variant-id="{{ product.selected_or_first_available_variant.id }}"
+  data-cart-redirect="{{ settings.enable_cart_redirection | json }}">
+  <span class="product-card-interaction-addtocart-available">
+    {% if selected_variant.available %}
+    {{ 'products.product_item.add_to_cart' | t }}
+    {% else %}
+    {{ 'products.product_item.sold_out' | t }}
+    {% endif %}
+  </span>
+
+  <span class="product-card-interaction-addtocart-error">
+    {{ 'products.product_item.unavailable' | t }}
+  </span>
+
+  <div class="product-card-interaction-addtocart-spinner">
+    {% render 'icon' with 'spinner' %}
+  </div>
+
+  <noscript>
+    {% if selected_variant.available %}
+    {{ 'products.product_item.add_to_cart' | t }}
+    {% else %}
+    {{ 'products.product_item.sold_out' | t }}
+    {% endif %}
+  </noscript>
+</button>
+{% endcapture %}
+
 <li
   class="
     product
@@ -276,6 +311,7 @@
           {{ product_card_interactions }}
         {% else %}
           {{ product_card_details }}
+          {{ button-add-card }}
         {% endif %}
       </div>
 

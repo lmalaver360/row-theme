@@ -66,29 +66,38 @@
   {%- endcapture -%}
 
   <section class="
-                                          home-section
-                                          clearfix
-                                          picture-block
-                                          picture-block-{{ alignment }}
-                                          picture-block--desktop-height-{{ section.settings.desktop_height }}
-                                          picture-block--mobile-height-{{ section.settings.mobile_height }}
-                                          {% if section.settings.parallax %}
-                                            picture-block--parallax
-                                          {% endif %}
-                                          {% if section.settings.margin == 'none' %}
-                                            picture-block-no-margin
-                                          {% endif %}
-                                        ">
+                      home-section
+                      clearfix
+                      picture-block
+                      picture-block-{{ alignment }}
+                      picture-block--desktop-height-{{ section.settings.desktop_height }}
+                      picture-block--mobile-height-{{ section.settings.mobile_height }}
+                      {% if section.settings.parallax %}
+                        picture-block--parallax
+                      {% endif %}
+                      {% if section.settings.margin == 'none' %}
+                        picture-block-no-margin
+                      {% endif %}
+                    " style="background-color: {{ section.settings.background-colour }}">
     <div class="picture-block-image">
       {{ image_tag }}
+
+      {% if section.settings.logo %}
+        <div class="picture-logo-image">
+          {{ image_logo }}
+
+        </div>
+      {% endif %}
     </div>
 
-    <div class="picture-block-wrapper" style="background-color: {{ section.settings.background-colour }}">
+    <div class="picture-block-wrapper">
       <div class="centering-wrapper">
         <div class="picture-block-content">
-          {% if section.settings.logo %}
-            {{ image_logo }}
-          {% endif %}
+          <div class="picture-logo-image">
+            {% if section.settings.logo %}
+              {{ image_logo }}
+            {% endif %}
+          </div>
           <h2 class="picture-block-heading">
             {% if heading != blank %}
               {{ heading }}
@@ -102,9 +111,9 @@
 
           {% if button_label != blank %}
             <a class="
-                                                                            btn-solid
-                                                                            btn-solid--{{ button_style }}
-                                                                          " href="{{ button_link }}">
+                                                                          btn-solid
+                                                                          btn-solid--{{ button_style }}
+                                                                        " href="{{ button_link }}">
               {{ button_label | escape }}
             </a>
           {% endif %}
