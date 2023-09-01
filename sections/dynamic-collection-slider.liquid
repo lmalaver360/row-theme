@@ -1,20 +1,74 @@
+{%- assign image = section.settings.image -%}
+{%- assign heading = section.settings.title | escape -%}
+{%- assign subtitle = section.settings.subtitle | escape -%}
+
+
+{%- capture image_tag -%}
+  {%- if section.settings.image != blank -%}
+    {%
+       render 'rimg'
+     img: image,
+     alt: heading,
+     size: '1024x1024',
+     lazy: true,
+     focal_point: image.presentation.focal_point, %}
+  {%- else -%}
+    {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+  {%- endif -%}
+{%- endcapture -%}
+
 <div
   data-section-id="{{ section.id }}">
   <section
-    class="collection-slider">
-    <h2>slider</h2>
+    class="collectionSlider featured-collection clearfix">
+    <div
+      class="collectionSlider__container">
+      <div
+        class="collectionSlider__image">
+        <h2
+          class="section-title">{{ heading }}</h2>
+        <h2
+          class="section-title">{{ subtitle }}</h2>
+        {{ image_tag }}
+      </div>
+      <div
+        class="collectionSlider__slider"></div>
+
+    </div>
   </section>
 </div>
 
 {% schema %}
   {
-    "name": "Feature slider collection",
+    "name": "Slider collection",
+    "class": "shopify-section--slider-collection",
     "settings": [
+      {
+        "type": "header",
+        "content": "Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
       {
         "type": "collection",
         "id": "collection",
         "label": "Collection"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Slider"
+      }, {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle",
+        "default": "Collection"
       }
+
     ],
     "presets": [
       {
