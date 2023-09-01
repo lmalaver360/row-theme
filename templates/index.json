@@ -79,7 +79,10 @@
     "ecebc0be-7de2-451c-9746-2f9bca83edbf": {
       "type": "dynamic-collection-slider",
       "settings": {
-        "collection": ""
+        "image": "shopify:\/\/shop_images\/image_2_1.png",
+        "collection": "",
+        "title": "summer",
+        "subtitle": "newness"
       }
     },
     "5b040336-f51e-478f-9fac-23fe965bc5f8": {
