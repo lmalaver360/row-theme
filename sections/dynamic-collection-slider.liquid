@@ -2,15 +2,14 @@
   type="application/json"
   data-section-type="dynamic-slideshow"
   data-section-id="{{ section.id }}"
-  data-section-data
->
-  
-</script>
+  data-section-data></script>
 
 {%- assign image = section.settings.image -%}
 {%- assign heading = section.settings.title | escape -%}
 {%- assign subtitle = section.settings.subtitle | escape -%}
 {%- assign productsCollection = section.settings.collection -%}
+{%- assign content = section.settings.content -%}
+
 
 {%- capture image_tag -%}
   {%- if section.settings.image != blank -%}
@@ -26,78 +25,74 @@
   {%- endif -%}
 {%- endcapture -%}
 
-<div
-  data-section-id="{{ section.id }}">
-  <section
-    class="collectionSlider featured-collection clearfix slideshow"
-    >
-    <div
-      class="collectionSlider__container">
-      <div
-        class="collectionSlider__image">
-        <h2
-          class="section-title">{{ heading }}</h2>
-        <h2
-          class="section-title">{{ subtitle }}</h2>
+<div data-section-id="{{ section.id }}">
+  <section class="collectionSlider featured-collection clearfix slideshow">
+    <div class="collectionSlider__container">
+      <div class="collectionSlider__image">
+        <h2 class="section-title">{{ heading }}</h2>
+        <h2 class="section-title">{{ subtitle }}</h2>
         {{ image_tag }}
       </div>
-      <div
-        class="collectionSlider__slider">
-            <span class="prev">
-            {% render 'icon' with 'arrow-thin-left' %}
-          </span>
-        
-          <span class="next">
-            {% render 'icon' with 'arrow-thin-right' %}
-          </span>
-          <ul class="jump-to-slide"></ul>
+      <div class="collectionSlider__text">
+        {% if content != blank %}
+          {{ content }}
+        {% endif %}
+      </div>
 
-              
-                      {% if productsCollection != blank %}
-                          <div
-                              class="product-list  slideshow--viewport
-                              " data-slideshow-viewport>
-                              {% for product in collections[productsCollection].products  %}
-                                <div class="slide
-                                {% if forloop.index == 1 %}
-                                  active
-                                {% endif %}">
-                                {%
-                                    render 'product-item',
-                                    product: product,
-                                    collection: productsCollection,
-                                    forloop: forloop,
-                                    onboarding: false,
-                                    
-                                    %}
-                                    <div class="image-wrap"></div>
+      <div class="collectionSlider__slider">
+        <span class="prev">
+          {% render 'icon' with 'arrow-thin-left' %}
+        </span>
 
-                                </div>
-                              {% endfor %}
-                          </div>
-                          {% else %}
-                          <div
-                              class="product-list  slideshow--viewport
-                              " data-slideshow-viewport>
-                              {% for i in (1..4) %}
-                                <div class="slide
-                                {% if forloop.index == 1 %}
-                                  active
-                                {% endif %}">
+        <span class="next">
+          {% render 'icon' with 'arrow-thin-right' %}
+        </span>
+        <ul class="jump-to-slide"></ul>
 
-                                    {%
-                                        render 'product-item',
-                                        forloop: forloop,
-                                        onboarding: true, %}
-                                    <div class="image-wrap"></div>
 
-                                </div>
-                              {% endfor %}
-                          </div>
-                      {% endif %}
+        {% if productsCollection != blank %}
+          <div class="product-list  slideshow--viewport
+                                                                                                                                          " data-slideshow-viewport>
+            {% for product in collections[productsCollection].products %}
+              <div
+                class="slide
+                {% if forloop.index == 1 %}
+                  active
+                {% endif %}">
+                {%
+                   render 'product-item',
+                 product: product,
+                 collection: productsCollection,
+                 forloop: forloop,
+                 onboarding: false, %}
+                <div class="image-wrap"></div>
 
-        
-        </div>
+              </div>
+            {% endfor %}
+          </div>
+        {% else %}
+          <div class="product-list  slideshow--viewport
+                                                                                                                                          " data-slideshow-viewport>
+            {% for i in (1..4) %}
+              <div
+                class="slide
+                {% if forloop.index == 1 %}
+                  active
+                {% endif %}">
+
+                {%
+                   render 'product-item',
+                 forloop: forloop,
+                 onboarding: true, %}
+                <div class="image-wrap"></div>
+
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+
+      </div>
 
     </div>
   </section>
@@ -132,6 +127,11 @@
         "id": "subtitle",
         "label": "Subtitle",
         "default": "Collection"
+      }, {
+        "type": "richtext",
+        "id": "content",
+        "label": "Text only on mobile",
+        "default": "<p>Say a bit about your brand, a specific product, or promotion.</p>"
       }
 
     ],

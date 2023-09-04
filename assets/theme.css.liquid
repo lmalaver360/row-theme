@@ -152,8 +152,8 @@
 
 
 @font-face {
-  font-family: 'karinlight';
-  src: url('./karinlight-webfont.woff2') format('woff2'), url('./karinlight-webfont.woff') format('woff');
+  font-family: 'karin';
+  src: url('./karinregular-webfont.woff2') format('woff2'), url('./karinregular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -1034,7 +1034,11 @@ html .shopify-payment-button .shopify-payment-button__button:hover,
 }
 
 .btn-solid {
-  min-width: 130px
+  min-width: 130px;
+  font-family: "qualy" !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .btn-solid--secondary {
@@ -1043,12 +1047,20 @@ html .shopify-payment-button .shopify-payment-button__button:hover,
   ;
   color: {{ settings.accent-colour }}
   ;
+  font-family: "qualy" !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .btn-solid--tertiary {
   background-color: #43403B;
   border: none;
   color: #fff;
+  font-family: "qualy";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .age-gate__confirm_btn,
@@ -1072,7 +1084,7 @@ html .shopify-payment-button .shopify-payment-button__button,
 .product-card-interaction,
 .disclosure__submit,
 .cart-mini-actions .action-button {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .product-card-interaction-quickshop,
@@ -2561,7 +2573,6 @@ a.pswp__share--download:hover {
   padding: 45px 0 0;
   margin: 0 0 45px;
   font-size: 28px;
-  letter-spacing: 0.1em;
   color: #B7A490;
   text-align: center;
 }
@@ -14066,7 +14077,7 @@ noscript .disclosure-list--visible {
     padding-top: 50px;
     padding-bottom: 0;
     margin: 0 auto;
-    max-width: 90% !important;
+    max-width: 300px !important;
   }
   .picture-block-content .picture-block-body {
     display: none;
@@ -14076,12 +14087,12 @@ noscript .disclosure-list--visible {
   }
 }
 .picture-block-content {
-  max-width: 60%;
+  max-width: 55%;
   text-align: center;
 }
 
 .picture-block-heading {
-  font-family: "karinlight", sans-serif;
+  font-family: "karin", sans-serif;
   font-style: normal;
   font-weight: 400;
   margin: 50px 0 30px;
@@ -17381,4 +17392,8 @@ img[data-rimg=loaded] {
 .collectionSlider__slider .product-card-figure .badges-wrapper {
   bottom: 1rem;
   top: auto
+}
+
+.collectionSlider__slider .product {
+  width: max-content;
 }
