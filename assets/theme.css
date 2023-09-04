@@ -154,6 +154,22 @@
        url("https://fonts.shopifycdn.com/avenir_next/avenirnext_i1.00bfce4a9e0878a90fe6f0f0ff643cb637284547.woff?&hmac=1f43e35fa6ce04c5d353277391256d34604dadfd4e93c839ff18bfc05a4d565b") format("woff");
 }
 
+@font-face {
+  font-family: 'karinlight';
+  src: url('./karinlight-webfont.woff2') format('woff2'),
+       url('./karinlight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'qualy';
+  src: url('./qualy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 /*
 	Styles for basic PhotoSwipe functionality (sliding area, open/close transitions)
@@ -1920,16 +1936,16 @@ a.pswp__share--download:hover {
 }
 
 .section-title {
-  font-family: "ITC Stone Sans II",sans-serif;
+  font-family: "qualy";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   padding: 45px 0 0;
   margin: 0 0 45px;
-  font-size: 18px;
+  font-size: 28px;
   letter-spacing: 0.1em;
-  color: #052422;
+  color: #B7A490;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .section-border {
@@ -12871,7 +12887,7 @@ noscript .disclosure-list--visible {
 }
 
 .picture-block-heading {
-  font-family: "Mariposa Sans",sans-serif;
+  font-family: "karinlight",sans-serif;
   font-style: normal;
   font-weight: 400;
   margin: 50px 0 30px;
