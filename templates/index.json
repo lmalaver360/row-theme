@@ -76,6 +76,42 @@
         "products_per_row": 4
       }
     },
+    "7d670c5b-4504-4faf-88bb-b4f0bb39a0c1": {
+      "type": "dynamic-slider",
+      "blocks": {
+        "43582c02-6ff4-46d1-98db-9b367b472b70": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-06-22_at_5.09_2.jpg",
+            "link": "",
+            "link_label": "art & collectibles"
+          }
+        },
+        "28fb2b92-6cd1-4c9c-96fb-144819f42abf": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_3.jpg",
+            "link": "",
+            "link_label": "accessories"
+          }
+        },
+        "72fe4653-23e7-4898-b2bf-d05b87110f2c": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_5.jpg",
+            "link": "",
+            "link_label": "home goods"
+          }
+        }
+      },
+      "block_order": [
+        "43582c02-6ff4-46d1-98db-9b367b472b70",
+        "28fb2b92-6cd1-4c9c-96fb-144819f42abf",
+        "72fe4653-23e7-4898-b2bf-d05b87110f2c"
+      ],
+      "settings": {
+      }
+    },
     "ecebc0be-7de2-451c-9746-2f9bca83edbf": {
       "type": "dynamic-collection-slider",
       "settings": {
@@ -94,19 +130,14 @@
         "desktop_alignment": "left",
         "mobile_alignment": "top"
       }
-    },
-    "7d670c5b-4504-4faf-88bb-b4f0bb39a0c1": {
-      "type": "dynamic-slider",
-      "settings": {
-      }
     }
   },
   "order": [
     "dynamic-image-with-text-1",
     "dynamic-logo-list-1",
     "dynamic-collection-1",
+    "7d670c5b-4504-4faf-88bb-b4f0bb39a0c1",
     "ecebc0be-7de2-451c-9746-2f9bca83edbf",
-    "5b040336-f51e-478f-9fac-23fe965bc5f8",
-    "7d670c5b-4504-4faf-88bb-b4f0bb39a0c1"
+    "5b040336-f51e-478f-9fac-23fe965bc5f8"
   ]
 }
