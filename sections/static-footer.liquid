@@ -5,6 +5,9 @@
   assign mailingList = section.settings.footer-mailing-list
   assign alternateFooter = section.settings.footer-alternate
   assign alternateFooterMenu = section.settings.footer-secondary-menu
+  assign connectFooterMenu = section.settings.footer-connect-menu
+  assign shopFooterMenu = section.settings.footer-shop-menu
+
   assign country_selector = section.settings.show_currency_selector
   assign locale_selector = section.settings.show_locale_selector
 %}
@@ -26,6 +29,9 @@
       paymentOptions: paymentOptions,
       country_selector: country_selector,
       locale_selector: locale_selector,
+      alternateFooterMenu: alternateFooterMenu,
+      connectFooterMenu: connectFooterMenu,
+      shopFooterMenu: shopFooterMenu,
     %}
   {% else %}
     {%
@@ -70,6 +76,18 @@
       "id": "footer-alternate",
       "label": "Use alternate footer layout",
       "default": false
+    },
+    {
+      "type": "link_list",
+      "id": "footer-connect-menu",
+      "label": "Contact footer menu",
+      "info": "This menu won't show dropdown items"
+    },
+    {
+      "type": "link_list",
+      "id": "footer-shop-menu",
+      "label": "Shop footer menu",
+      "info": "This menu won't show dropdown items"
     },
     {
       "type": "link_list",
