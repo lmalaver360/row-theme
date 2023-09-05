@@ -16171,7 +16171,7 @@ color: #F5F5F5;
   width: max-content;
   height: max-content;
   font-family: "qualy";
-  font-size: clamp(32px, 5vw, 56px);
+  font-size: clamp(32px, 4vw, 56px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -16193,3 +16193,10 @@ color: #F5F5F5;
 }
 }
   
+@media screen and (min-width: 1400px) and (min-height: 930px){
+  .sliderBlock .swiper-slide-item{
+    height: 745px
+  
+  }
+}
+ 
