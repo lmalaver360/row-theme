@@ -18,15 +18,11 @@
       <input
         type="hidden"
         name="contact[tags]"
-        value="{{ pxs_newsletter_snippet_tags }}"
-      />
+        value="{{ pxs_newsletter_snippet_tags }}" />
 
       <div class="pxs-newsletter-form-fields">
         <div class="pxs-newsletter-form-field">
-          <label
-            class="pxs-newsletter-form-label"
-            for="{{ pxs_newsletter_email_id }}"
-          >
+          <label class="pxs-newsletter-form-label" for="{{ pxs_newsletter_email_id }}">
             {{ pxs_newsletter_form_placeholder }}
           </label>
 
@@ -37,18 +33,14 @@
             type="email"
             placeholder="{{ pxs_newsletter_form_placeholder }}"
             aria-label="{{ pxs_newsletter_form_placeholder }}"
-            required
-          />
+            required />
         </div>
 
         <div class="pxs-newsletter-form-field">
           <button
             class="pxs-newsletter-form-button"
             name="subscribe"
-            type="submit"
-          >
-            {{ pxs_newsletter_form_submit }}
-          </button>
+            type="submit"></button>
         </div>
       </div>
     {% endif %}
