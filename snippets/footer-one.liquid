@@ -13,6 +13,14 @@
     assign footerModules = footerModules | plus: 1
   endif
 
+  if connectFooterMenu != blank and linklists[connectFooterMenu].links.size > 0
+    assign footerModules = footerModules | plus: 1
+  endif
+
+  if shopFooterMenu != blank and linklists[shopFooterMenu].links.size > 0
+    assign footerModules = footerModules | plus: 1
+  endif
+
   assign show_follow_on_shop = false
   assign country_selector = section.settings.show_currency_selector
   assign locale_selector = section.settings.show_locale_selector
@@ -199,13 +207,29 @@
   {%- endif -%}
 {% endcapture %}
 
+{%- capture image_tag -%}
+  {%- if logoImage != blank -%}
+    {%
+       render 'rimg'
+     img: logoImage,
+     alt: heading,
+     size: '158X166',
+     lazy: true,
+     focal_point: logoImage.presentation.focal_point, %}
+  {%- else -%}
+    {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+  {%- endif -%}
+{%- endcapture -%}
+
 <footer
   class="
     main-footer
-    content-area
+    
   "
   id="main-footer"
 >
+    
+
   <ul
     class="
       connect
@@ -316,9 +340,50 @@
     {% endif %}
   </ul>
 
+
+  <div class="sup-footer content-area">
+    <div class="footer-logo">
+      {{image_tag}}
+    </div>
+    <div class="footer-principal">
+        <div>
+          {% if connectFooterMenu != "" and linklists[connectFooterMenu].links.size > 0 %}
+            <h4 class="section-title">
+              Connect
+            </h4>
+            <ul>
+                <li class="footer-menu">
+                  <ul class="footer-linklist-one">
+                    {% for link in linklists[connectFooterMenu].links %}
+                      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </li>       
+              </ul>
+        {% endif %}
+        </div>
+        <div>
+          <h4 class="section-title">
+            Shop         
+            </h4>
+            <ul>
+              {% if shopFooterMenu != "" and linklists[shopFooterMenu].links.size > 0 %}
+                <li class="footer-menu">
+                  <ul class="footer-linklist-one">
+                    {% for link in linklists[shopFooterMenu].links %}
+                      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </li>       
+                {% endif %}
+              </ul>
+        </div>
+    </div>
+  </div>
+
   <div class="sub-footer">
     {%- if show_follow_on_shop or right_column_item_count > 0 -%}
-      <div class="sub-footer__row sub-footer__row--first">
+      <div class="sub-footer__row sub-footer__row--first ">
         {%- if show_follow_on_shop and right_column_item_count > 0 -%}
           {{ shop | login_button: action: 'follow' }}
         {%- endif -%}
@@ -336,7 +401,7 @@
         {% endif %}
       "
     >
-      <div class="site-footer__row-inner-wrapper-left">
+      <div class="site-footer__row-inner-wrapper-left content-area">
         {%- if linklists.footer.links.size > 0 -%}
           <nav class="footer-nav">
             <ul>

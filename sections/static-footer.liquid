@@ -7,6 +7,8 @@
   assign alternateFooterMenu = section.settings.footer-secondary-menu
   assign connectFooterMenu = section.settings.footer-connect-menu
   assign shopFooterMenu = section.settings.footer-shop-menu
+  assign logoImage = section.settings.image
+
 
   assign country_selector = section.settings.show_currency_selector
   assign locale_selector = section.settings.show_locale_selector
@@ -32,6 +34,7 @@
       alternateFooterMenu: alternateFooterMenu,
       connectFooterMenu: connectFooterMenu,
       shopFooterMenu: shopFooterMenu,
+      logoImage: logoImage
     %}
   {% else %}
     {%
@@ -60,7 +63,16 @@
       "type": "richtext",
       "id": "text",
       "label": "Text"
-    },
+    },{
+        "type": "header",
+        "content": "Logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image logo"
+      },
+
     {
       "type": "checkbox",
       "id": "footer-mailing-list",

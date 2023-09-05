@@ -2137,7 +2137,6 @@ main section:first-child .section-border {
   
   
 .main-footer {
-  padding: 0 15px;
   margin-top: 65px;
 }
 .main-footer .footer-message {
@@ -2179,8 +2178,7 @@ main section:first-child .section-border {
   display: block;
   font-size: 0;
   text-align: center;
-  border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
+ 
 }
 .main-footer .connect > li {
   display: inline-block;
@@ -16220,4 +16218,45 @@ color: #F5F5F5;
   
   }
 }
- 
+
+.main-footer .sup-footer{
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+}
+
+.main-footer .footer-logo img, .main-footer .footer-logo svg{
+  width: 158px;
+  height: 166px;
+}
+.main-footer .footer-principal{
+  display: flex;
+
+}
+.main-footer .footer-principal div{
+  width: 236px;
+  text-align: center
+}
+
+.main-footer .footer-principal .footer-menu{
+  padding: 0 !important;
+}
+
+.main-footer .footer-principal .section-title{
+  margin-bottom: 20px;
+}
+
+.main-footer .footer-principal a{
+  color: #B7A490 !important;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.main-footer  .sub-footer{
+  background: #43403B;
+  margin: 40px 0 60px;
+}
