@@ -786,13 +786,21 @@ font-size: 18px;
 .product-area .brand, .template-search .result .details .brand, .product-tabs__label, .collapsible-tab__heading, .product__description .go-to-product, .password-page-logo .store-title, .template-page .sidebar .title, .template-contact .sidebar .title, .order-item-label-mobile, .customer.order .order-history .table td.product-item .label.vendor, .sidebar-title, .template-cart .table td.product-item .label.vendor, .template-cart .table th, .comments .date, .comments-wrap .title, .article-date, .article-author-writtenby,
 .article-tags-filedunder,
 .article-comments-discussion, .blog-sidebar-recentposts-title,
-.blog-sidebar-tags-title, .customer.account .title, .customer .table th, .predictive-search__title, .twitter-tweet .timestamp, .shopify-section--blog-posts .article .date, .rte .tabs > li:not(.grouped-content-content), .pxs-newsletter-text .tabs > li:not(.grouped-content-content), .mobile-dropdown .list .list-item a, .mega-nav .list .label, .main-header nav.full .nav-item > .label,
+.blog-sidebar-tags-title, .customer.account .title, .customer .table th, .predictive-search__title, .twitter-tweet .timestamp, .shopify-section--blog-posts .article .date, .rte .tabs > li:not(.grouped-content-content), .pxs-newsletter-text .tabs > li:not(.grouped-content-content), .mobile-dropdown .list .list-item a, .mega-nav .list .label, 
 .main-header nav.full .nav-item > details .label, .main-footer .connect .title, .complementary-product__link, .product-callout {
   font-family: "ITC Stone Sans II",sans-serif;
   font-style: normal;
   font-weight: 300;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.main-header nav.full .nav-item > .label{
+  font-family: "qualy";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .main-header nav.full .nav-item > .label,
@@ -4943,6 +4951,9 @@ table.mobile-layout tr:nth-child(even) td {
   justify-content: space-between;
   width: 100%;
   margin-left: 0;
+}
+.featured-collection .product-card-interaction{
+  text-transform: uppercase;
 }
 .featured-collection .product-list.row-of-2 .product {
   width: calc(50% - 12px);
@@ -12904,7 +12915,7 @@ noscript .disclosure-list--visible {
   font-family: "karin",sans-serif;
   font-style: normal;
   font-weight: 400;
-  margin: 50px 0 30px;
+  margin: 80px 0 60px;
   font-size: clamp(48px, 5vw, 84px);
   line-height: normal;
   color: #052422;
@@ -14314,11 +14325,17 @@ body:not(.user-is-tabbing) .shopify-model-viewer-ui .shopify-model-viewer-ui__bu
   display: block;
 }
 @media screen and (max-width: 720px) {
+  .product-card-details{
+    width: 100%;
+  }
   .product-card-details .title{
     text-align: left;
   }
   .product-item__price{
     text-align: left;
+  }
+  .product-card-footer .product-card-interaction{
+    display: none;
   }
 }
 
@@ -15965,6 +15982,16 @@ img[data-rimg=loaded] {
   transform: none !important;
 }
 
+.collectionSlider__slider .prev svg, .collectionSlider__slider .next svg{
+  width: 38px;
+}
+.collectionSlider__slider .prev{
+  left: 10%;
+}
+.collectionSlider__slider .next{
+  right: 10%;
+}
+
 .collectionSlider__slider .product-list .product{
   margin-bottom: 0;
 }
@@ -15983,7 +16010,7 @@ color: #F5F5F5;
 
 
 .collectionSlider__slider .product-card-figure{
-  border-radius: 50% 50% 0 0;
+  border-radius: 125px 125px 0 0;
   overflow: hidden;
   width: 226px;
   height: 330px;
@@ -16069,3 +16096,4 @@ color: #F5F5F5;
 }
 
 }
+

@@ -41,18 +41,18 @@
 
       <div class="collectionSlider__slider">
         <span class="prev">
-          {% render 'icon' with 'arrow-thin-left' %}
+          {% render 'icon' with 'arrow-large-left' %}
         </span>
 
         <span class="next">
-          {% render 'icon' with 'arrow-thin-right' %}
+          {% render 'icon' with 'arrow-large-right' %}
         </span>
         <ul class="jump-to-slide"></ul>
 
 
         {% if productsCollection != blank %}
           <div class="product-list  slideshow--viewport
-                                                                                                                                          " data-slideshow-viewport>
+                                                                                                                                                                                          " data-slideshow-viewport>
             {% for product in collections[productsCollection].products %}
               <div
                 class="slide
@@ -72,7 +72,7 @@
           </div>
         {% else %}
           <div class="product-list  slideshow--viewport
-                                                                                                                                          " data-slideshow-viewport>
+                                                                                                                                                                                          " data-slideshow-viewport>
             {% for i in (1..4) %}
               <div
                 class="slide
