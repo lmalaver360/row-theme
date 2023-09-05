@@ -24,23 +24,35 @@
 
 </script>
 
-<section class="sliderBlock">
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
+<div data-section-id="{{ section.id }}">
 
-            {% if section.blocks.size > 0 %}
-            {% for block in section.blocks %}
-            {%- assign link = block.settings.link -%}
-            {%- assign label = block.settings.link_label -%}
-            {%- assign image = block.settings.image -%}
+    <section class="sliderBlock">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
 
-            {% if image %}
-            <div class="swiper-slide">
-                <div class="swiper-slide-item">
-                    {% if label != blank %}
-                    <a href="{{ link | escape }}" target="_blank">
+                {% if section.blocks.size > 0 %}
+                {% for block in section.blocks %}
+                {%- assign link = block.settings.link -%}
+                {%- assign label = block.settings.link_label -%}
+                {%- assign image = block.settings.image -%}
+
+                {% if image %}
+                <div class="swiper-slide">
+                    <div class="swiper-slide-item">
+                        {% if label != blank %}
+                        <a href="{{ link | escape }}" target="_blank">
+                            {%
+                            render 'rimg'
+                            img: image,
+                            alt: label,
+                            size: '540x640',
+                            lazy: true,
+                            focal_point: image.presentation.focal_point, %}
+                            {{label | escape}}
+                        </a>
+                        {% else %}
                         {%
                         render 'rimg'
                         img: image,
@@ -48,43 +60,35 @@
                         size: '540x640',
                         lazy: true,
                         focal_point: image.presentation.focal_point, %}
-                        {{label | escape}}
-                    </a>
-                    {% else %}
-                    {%
-                    render 'rimg'
-                    img: image,
-                    alt: label,
-                    size: '540x640',
-                    lazy: true,
-                    focal_point: image.presentation.focal_point, %}
-                    {% endif %}
+                        {% endif %}
+                    </div>
                 </div>
-            </div>
-            {% else %}
-            {% render 'logo-list-onboarding' %}
-            {% endif %}
-            {% endfor %}
-            {% else %}
-            {% for i in (1..4) %}
-            <div class="swiper-slide">
-                <div class="swiper-slide-item">
-                    <a>
+                {% else %}
+                {% render 'logo-list-onboarding' %}
+                {% endif %}
+                {% endfor %}
+                {% else %}
+                {% for i in (1..4) %}
+                <div class="swiper-slide">
+                    <div class="swiper-slide-item">
+                        <a>
 
-                        {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
-                        <span>{{label | escape}}</span>
-                    </a>
+                            {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                            <span>{{label | escape}}</span>
+                        </a>
+                    </div>
                 </div>
+                {% endfor %}
+                {% endif %}
             </div>
-            {% endfor %}
-            {% endif %}
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
         </div>
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+    </section>
 
-    </div>
-</section>
+</div>
 
 {% schema %}
 {
@@ -124,7 +128,7 @@
 "presets": [
 {
 "category": "Image",
-"name": "Slider list",
+"name": "Slider",
 "blocks": [
 {
 "type": "feature"
