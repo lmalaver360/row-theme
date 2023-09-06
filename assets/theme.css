@@ -3200,6 +3200,9 @@ mark {
     display: inline;
     word-break: break-word;
   }
+  .store-title img{
+    width: 74px;
+  }
 }
 .main-header--normal .store-title:focus-within, .main-header--expanded .store-title:focus-within {
   outline: auto 5px Highlight;

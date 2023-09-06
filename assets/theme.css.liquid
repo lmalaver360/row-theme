@@ -3788,6 +3788,9 @@ mark {
     display: inline;
     word-break: break-word;
   }
+  .store-title img {
+    width: 74px;
+  }
 }
 .main-header--normal .store-title:focus-within,
 .main-header--expanded .store-title:focus-within {
@@ -15679,11 +15682,17 @@ body:not(.user-is-tabbing) .shopify-model-viewer-ui .shopify-model-viewer-ui__bu
   display: block;
 }
 @media screen and (max-width: 720px) {
+  .product-card-details {
+    width: 100%;
+  }
   .product-card-details .title {
     text-align: left;
   }
   .product-item__price {
     text-align: left;
+  }
+  .product-card-footer .product-card-interaction {
+    display: none;
   }
 }
 .product-item__price .money--last {
@@ -17434,7 +17443,7 @@ img[data-rimg=loaded] {
 
 
 .collectionSlider__slider .product-card-figure {
-  border-radius: 50% 50% 0 0;
+  border-radius: 125px 125px 0 0;
   overflow: hidden;
   width: 226px;
   height: 330px;
@@ -17681,7 +17690,8 @@ img[data-rimg=loaded] {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  display: block;
 }
 
 .main-footer .sub-footer {
