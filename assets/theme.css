@@ -2316,7 +2316,22 @@ main section:first-child .section-border {
   margin-left: 0;
 }
 .sub-footer nav a {
-  color: #506664;
+  color: #F4E9DD;
+  text-align: center;
+  font-family: "qualy";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 1rem;
+}
+.sub-footer p{
+  display: none;
+}
+.sub-footer .footer-nav ul{
+  width: max-content;
+  margin: 0 auto;
+  padding: 1.6rem 0;
 }
 .sub-footer nav a:hover {
   color: 
@@ -9145,7 +9160,7 @@ html:not(.header-layout-minimal) .shopify-section:first-of-type .home-section.sl
     height: 81px;
     background-repeat: no-repeat;
     left: 0;
-    background-size: cover;
+    background-size: contain;
   }
 }
 @media (min-width: 1080px) {
@@ -12934,9 +12949,9 @@ noscript .disclosure-list--visible {
   font-family: "karin",sans-serif;
   font-style: normal;
   font-weight: 400;
-  margin: 80px 0 60px;
+  margin: 90px 0 70px;
   font-size: clamp(48px, 5vw, 84px);
-  line-height: normal;
+  line-height: 1;
   color: #052422;
 }
 @media screen and (max-width: 800px) {
@@ -16053,6 +16068,7 @@ color: #F5F5F5;
   .collectionSlider{
     padding-top: 0;
     background-color: transparent;
+    margin-top: 70px;
   }
   .collectionSlider::after{
     content: none;
@@ -16082,6 +16098,21 @@ color: #F5F5F5;
   .collectionSlider__image .section-title:nth-child(2){
     top: 65px;
   }
+
+  .collectionSlider__slider .prev{
+    left: 2%;
+  }
+  .collectionSlider__slider .next{
+    right: 2%;
+  }
+
+  .collectionSlider__slider .prev, .collectionSlider__slider .next{
+    filter: invert();
+  }
+  .collectionSlider__slider .prev svg, .collectionSlider__slider .next svg{
+    width: 28px;
+  }
+  
   .collectionSlider__slider{
     height: auto;
     width: 90%;
@@ -16199,6 +16230,9 @@ color: #F5F5F5;
 }
 
 @media screen and (max-width: 990px) {
+  .sliderBlock .swiper-wrapper{
+    padding-top: 0
+  }
 .sliderBlock{
   background-color: transparent;
   padding-top: 0;
@@ -16253,10 +16287,34 @@ color: #F5F5F5;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  display: block;
 }
 
 .main-footer  .sub-footer{
   background: #43403B;
-  margin: 40px 0 60px;
+  margin: 40px 0;
+}
+
+
+@media screen and (max-width: 740px) {
+  .main-footer .sup-footer{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main-footer .footer-principal{
+    flex-direction: column-reverse;
+  }
+  .main-footer .footer-logo{
+    margin-top: 2rem;
+  }
+  .main-footer .footer-principal div{
+    width: 100%;
+  }
+  .sub-footer nav a{
+    margin: 0;
+  }
+  .main-footer{
+    margin-top: 25px;
+  }
 }
