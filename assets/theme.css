@@ -16189,20 +16189,23 @@ color: #F5F5F5;
 
 .sliderBlock .swiper-slide-item{
   position: relative;
-  height: 638px
+  height: 638px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .sliderBlock .swiper-slide-item a{
   display: block;
   height: 100%;
+  width: 100%;
 }
 
 .sliderBlock .swiper-slide-item img,
   .sliderBlock .swiper-slide-item svg {
-    height: 100%;
     width: 100%;
-    object-fit: cover;
 }
+
+
 
 .sliderBlock .swiper-slide-item a img,
   .sliderBlock .swiper-slide-item a svg {

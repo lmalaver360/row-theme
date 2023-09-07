@@ -140,7 +140,7 @@
         breakpoints: {
             990: {
                 spaceBetween: 30,
-                slidesPerView: ({{ section.blocks.size }} -1) +.5,
+                slidesPerView: {{ section.settings.products_per_slides }} +.5,
                 },
             }
         })
@@ -166,7 +166,8 @@
 "min": 2,
 "max": 4,
 "step": 1,
-"default": 4
+"default": 4,
+"info": "Use only for slider version"
 }
 ],
 "blocks": [
