@@ -124,7 +124,8 @@
 <script type="module">
     import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
     let container = document.querySelector(".swiper-{{ section.id }}")
-    if (container) {
+
+    if (!{{ section.settings.static }} ) {
         const swiper = new Swiper(container, {
             slidesPerView: 1.5,
             spaceBetween: 10,
@@ -138,12 +139,12 @@
             breakpoints: {
                 990: {
                     spaceBetween: 30,
-                    slidesPerView: 2.5,
+                    slidesPerView: {{ section.blocks.size }} -1,
                 },
             }
         })
-        swiper.slideTo(1, 0)
-    };
+    swiper.slideTo(1, 0)
+    }
 </script>
 
 {% schema %}

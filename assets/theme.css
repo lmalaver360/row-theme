@@ -16265,6 +16265,9 @@ color: #F5F5F5;
 
 .sliderStatic{
   overflow: hidden;
+  padding: 100px 0 160px;
+  background-color: #F9F5EA;
+
 }
 .sliderStatic-hidden{
   display: flex;
@@ -16286,7 +16289,10 @@ color: #F5F5F5;
 }
 
 @media screen and (max-width: 990px) {
-  
+  .sliderStatic{
+    padding: 20px 0 50px;
+    background-color: #F9F5EA;
+  }
   .sliderStatic-hidden{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -16382,8 +16388,9 @@ color: #F5F5F5;
     margin: 0;
   }
   .main-footer{
-    margin-top: 25px;
+    margin-top: 0;
   }
+
 }
 
 .marquee{
