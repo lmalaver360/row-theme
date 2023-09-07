@@ -16257,6 +16257,10 @@ color: #F5F5F5;
   height: 400px
 
 }
+.sliderBlock .swiper-slide-item img,
+  .sliderBlock .swiper-slide-item svg {
+    width: 100%;
+}
 }
   
 @media screen and (min-width: 1400px) and (min-height: 930px){
