@@ -160,7 +160,7 @@
         "8a9f40e5-f749-437a-b718-edb65ff4c702"
       ],
       "settings": {
-        "static": false,
+        "static": true,
         "products_per_slides": 3
       }
     }
