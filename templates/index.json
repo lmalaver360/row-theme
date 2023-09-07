@@ -131,7 +131,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Screenshot_2023-06-23_at_9.12_1.jpg",
             "link": "",
-            "link_label": "Button"
+            "link_label": ""
           }
         },
         "a0a048a8-d0ad-4f4a-989a-fdbcfb1afc05": {
@@ -139,7 +139,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/image_7.jpg",
             "link": "",
-            "link_label": "Button"
+            "link_label": ""
           }
         }
       },
