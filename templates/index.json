@@ -98,6 +98,15 @@
         "static": false
       }
     },
+    "5b040336-f51e-478f-9fac-23fe965bc5f8": {
+      "type": "pxs-newsletter",
+      "settings": {
+        "title": "curious? join us.",
+        "text": "",
+        "desktop_alignment": "left",
+        "mobile_alignment": "top"
+      }
+    },
     "8ed7f152-bcae-4e1b-877e-7f473f053efb": {
       "type": "dynamic-slider",
       "blocks": {
@@ -143,15 +152,6 @@
       "settings": {
         "static": true
       }
-    },
-    "5b040336-f51e-478f-9fac-23fe965bc5f8": {
-      "type": "pxs-newsletter",
-      "settings": {
-        "title": "curious? join us.",
-        "text": "",
-        "desktop_alignment": "left",
-        "mobile_alignment": "top"
-      }
     }
   },
   "order": [
@@ -160,7 +160,7 @@
     "dynamic-collection-1",
     "ecebc0be-7de2-451c-9746-2f9bca83edbf",
     "7d670c5b-4504-4faf-88bb-b4f0bb39a0c1",
-    "8ed7f152-bcae-4e1b-877e-7f473f053efb",
-    "5b040336-f51e-478f-9fac-23fe965bc5f8"
+    "5b040336-f51e-478f-9fac-23fe965bc5f8",
+    "8ed7f152-bcae-4e1b-877e-7f473f053efb"
   ]
 }
