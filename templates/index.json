@@ -29,8 +29,8 @@
             "height": 82,
             "style": "body",
             "size": "large",
-            "duration": 60,
-            "gap": 20,
+            "duration": 200,
+            "gap": 120,
             "stop_on_hover": true
           }
         }
