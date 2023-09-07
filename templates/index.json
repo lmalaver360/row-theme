@@ -18,6 +18,29 @@
         "button_style": "tertiary"
       }
     },
+    "1694091944d14e9197": {
+      "type": "apps",
+      "blocks": {
+        "a2f6b896-915c-4fa5-bf47-c33f77d71516": {
+          "type": "shopify:\/\/apps\/simple-marquee\/blocks\/marquee\/1c87af44-fdf4-422c-b308-97ab9586a4c4",
+          "settings": {
+            "text": "your hotline for cur 1-800-shoprow",
+            "color_scheme": "accent-1",
+            "height": 82,
+            "style": "body",
+            "size": "large",
+            "duration": 60,
+            "gap": 20,
+            "stop_on_hover": true
+          }
+        }
+      },
+      "block_order": [
+        "a2f6b896-915c-4fa5-bf47-c33f77d71516"
+      ],
+      "settings": {
+      }
+    },
     "dynamic-collection-1": {
       "type": "dynamic-collection",
       "settings": {
@@ -86,6 +109,7 @@
   },
   "order": [
     "dynamic-image-with-text-1",
+    "1694091944d14e9197",
     "dynamic-collection-1",
     "ecebc0be-7de2-451c-9746-2f9bca83edbf",
     "7d670c5b-4504-4faf-88bb-b4f0bb39a0c1",
