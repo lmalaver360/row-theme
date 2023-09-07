@@ -126,20 +126,21 @@
     let container = document.querySelector(".swiper-{{ section.id }}")
 
     if (!{{ section.settings.static }} ) {
-        const swiper = new Swiper(container, {
-            slidesPerView: 1.5,
-            spaceBetween: 10,
-            centeredSlides: true,
-            createElement: true,
-            // Navigation arrows
-            navigation: {
-                nextEl: '.next-{{ section.id }}',
-                prevEl: '.prev-{{ section.id }}',
-            },
-            breakpoints: {
-                990: {
-                    spaceBetween: 30,
-                    slidesPerView: {{ section.blocks.size }} -1,
+        console.log(({{ section.blocks.size }} -1) +.5)
+    const swiper = new Swiper(container, {
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+        centeredSlides: true,
+        createElement: true,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.next-{{ section.id }}',
+            prevEl: '.prev-{{ section.id }}',
+        },
+        breakpoints: {
+            990: {
+                spaceBetween: 30,
+                slidesPerView: ({{ section.blocks.size }} -1) +.5,
                 },
             }
         })
@@ -158,6 +159,14 @@
 "label": "Static",
 "default": false,
 "info": "if you want it to be a slider, disable this option"
+},{
+"type": "range",
+"id": "products_per_row",
+"label": "Number of slides",
+"min": 2,
+"max": 4,
+"step": 1.5,
+"default": 4
 }
 ],
 "blocks": [
