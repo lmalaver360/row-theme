@@ -1,26 +1,26 @@
 <script type="module">
   import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
   const swiper = new Swiper('.swiper', {
-    
-            slidesPerView: 1.5,
-            spaceBetween: 10,
-            centeredSlides: true,
-            createElement: true,
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                990: {
-                    spaceBetween: 30,
-                    slidesPerView: 2.5,
-                },
-            }
-    
-    
-        })
-        swiper.slideTo(1, 0);</script>
+      
+              slidesPerView: 1.5,
+              spaceBetween: 10,
+              centeredSlides: true,
+              createElement: true,
+              // Navigation arrows
+              navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+              },
+              breakpoints: {
+                  990: {
+                      spaceBetween: 30,
+                      slidesPerView: 2.5,
+                  },
+              }
+      
+      
+          })
+          swiper.slideTo(1, 0);</script>
 
 <div data-section-id="{{ section.id }}">
 
@@ -127,16 +127,8 @@
     "presets": [
       {
         "category": "Image",
-        "name": "Slider",
-        "blocks": [
-          {
-            "type": "feature"
-          }, {
-            "type": "feature"
-          }, {
-            "type": "feature"
-          }
-        ]
+        "name": "Slider"
+
       }
     ],
     "disabled_on": {
