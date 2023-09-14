@@ -29,7 +29,7 @@
             "height": 82,
             "style": "body",
             "size": "large",
-            "duration": 200,
+            "duration": 100,
             "gap": 120,
             "stop_on_hover": true
           }
