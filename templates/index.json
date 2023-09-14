@@ -94,11 +94,9 @@
         "28fb2b92-6cd1-4c9c-96fb-144819f42abf",
         "72fe4653-23e7-4898-b2bf-d05b87110f2c"
       ],
-      "disabled": true,
       "settings": {
         "static": false,
-        "products_per_slides": 2,
-        "autoplay": false
+        "products_per_slides": 2
       }
     },
     "5b040336-f51e-478f-9fac-23fe965bc5f8": {
@@ -153,9 +151,8 @@
         "a0a048a8-d0ad-4f4a-989a-fdbcfb1afc05"
       ],
       "settings": {
-        "static": false,
-        "products_per_slides": 3,
-        "autoplay": true
+        "static": true,
+        "products_per_slides": 3
       }
     }
   },
