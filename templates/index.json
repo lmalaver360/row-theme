@@ -96,7 +96,8 @@
       ],
       "settings": {
         "static": false,
-        "products_per_slides": 2
+        "products_per_slides": 2,
+        "autoplay": false
       }
     },
     "5b040336-f51e-478f-9fac-23fe965bc5f8": {
@@ -151,8 +152,9 @@
         "a0a048a8-d0ad-4f4a-989a-fdbcfb1afc05"
       ],
       "settings": {
-        "static": true,
-        "products_per_slides": 3
+        "static": false,
+        "products_per_slides": 3,
+        "autoplay": true
       }
     }
   },
