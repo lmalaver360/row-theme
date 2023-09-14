@@ -94,6 +94,7 @@
         "28fb2b92-6cd1-4c9c-96fb-144819f42abf",
         "72fe4653-23e7-4898-b2bf-d05b87110f2c"
       ],
+      "disabled": true,
       "settings": {
         "static": false,
         "products_per_slides": 2,
