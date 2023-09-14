@@ -125,30 +125,30 @@
     import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
     let container = document.querySelector(".swiper-{{ section.id }}")
 
-    if ({{ section.settings.autoplay }}) {
-        let swiper = new Swiper(container, {
-            slidesPerView: 1.5,
-            spaceBetween: 10,
-            centeredSlides: true,
-            // Navigation arrows
-            loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: '.next-{{ section.id }}',
-                prevEl: '.prev-{{ section.id }}',
-            },
-            breakpoints: {
-                990: {
-                    spaceBetween: 30,
-                    slidesPerView: {{ section.settings.products_per_slides }} +.5,
-
-                },
-            }
-        })
-    }
+    //if ({{ section.settings.autoplay }}) {
+    //    let swiper = new Swiper(container, {
+    //        slidesPerView: 1.5,
+    //        spaceBetween: 10,
+    //        centeredSlides: true,
+    //        // Navigation arrows
+    //        loop: true,
+    //        autoplay: {
+    //            delay: 2500,
+    //            disableOnInteraction: false,
+    //        },
+    //        navigation: {
+    //            nextEl: '.next-{{ section.id }}',
+    //            prevEl: '.prev-{{ section.id }}',
+    //        },
+    //        breakpoints: {
+    //            990: {
+    //                spaceBetween: 30,
+    //                slidesPerView: {{ section.settings.products_per_slides }} +.5,
+    //
+    //            },
+    //        }
+    //    })
+    //}
 
     if (!{{ section.settings.static }} ) {
         let swiper = new Swiper(container, {
@@ -195,11 +195,6 @@
 "step": 1,
 "default": 4,
 "info": "Use only for slider version"
-}, {
-"type": "checkbox",
-"id": "autoplay",
-"label": "Autoplay",
-"default": false
 }
 ],
 "blocks": [
