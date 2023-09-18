@@ -30,7 +30,7 @@
             "style": "body",
             "size": "large",
             "duration": 300,
-            "gap": 100,
+            "gap": 120,
             "stop_on_hover": true
           }
         }
