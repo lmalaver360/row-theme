@@ -9,7 +9,7 @@
         "desktop_height": "natural",
         "mobile_height": "natural",
         "parallax": false,
-        "logo": "shopify:\/\/shop_images\/Group_17.svg",
+        "logo": "shopify:\/\/shop_images\/logo_circle.svg",
         "background-colour": "#c1cdaa",
         "title": "A COLLECTION OF CURIOUS OBJECTS.",
         "content": "",
@@ -18,10 +18,10 @@
         "button_style": "tertiary"
       }
     },
-    "1694091944d14e9197": {
+    "169505603682fec7b8": {
       "type": "apps",
       "blocks": {
-        "a2f6b896-915c-4fa5-bf47-c33f77d71516": {
+        "0a74db39-733f-4969-81c9-7e94efc583ff": {
           "type": "shopify:\/\/apps\/simple-marquee\/blocks\/marquee\/1c87af44-fdf4-422c-b308-97ab9586a4c4",
           "settings": {
             "text": "your hotline for cur 1-800-shoprow",
@@ -29,15 +29,20 @@
             "height": 82,
             "style": "body",
             "size": "large",
-            "duration": 200,
-            "gap": 120,
+            "duration": 300,
+            "gap": 100,
             "stop_on_hover": true
           }
         }
       },
       "block_order": [
-        "a2f6b896-915c-4fa5-bf47-c33f77d71516"
+        "0a74db39-733f-4969-81c9-7e94efc583ff"
       ],
+      "settings": {
+      }
+    },
+    "1694091944d14e9197": {
+      "type": "apps",
       "settings": {
       }
     },
@@ -94,11 +99,9 @@
         "28fb2b92-6cd1-4c9c-96fb-144819f42abf",
         "72fe4653-23e7-4898-b2bf-d05b87110f2c"
       ],
-      "disabled": true,
       "settings": {
         "static": false,
-        "products_per_slides": 2,
-        "autoplay": false
+        "products_per_slides": 2
       }
     },
     "5b040336-f51e-478f-9fac-23fe965bc5f8": {
@@ -153,14 +156,14 @@
         "a0a048a8-d0ad-4f4a-989a-fdbcfb1afc05"
       ],
       "settings": {
-        "static": false,
-        "products_per_slides": 3,
-        "autoplay": true
+        "static": true,
+        "products_per_slides": 3
       }
     }
   },
   "order": [
     "dynamic-image-with-text-1",
+    "169505603682fec7b8",
     "1694091944d14e9197",
     "dynamic-collection-1",
     "ecebc0be-7de2-451c-9746-2f9bca83edbf",

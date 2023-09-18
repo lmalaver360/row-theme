@@ -12949,13 +12949,13 @@ noscript .disclosure-list--visible {
 }
 
 .picture-block-heading {
-  font-family: "karin",sans-serif;
+  font-family: "qualy";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   margin: 100px 0;
   font-size: clamp(48px, 5vw, 84px);
-  line-height: 1;
-  color: #052422;
+  line-height: 1.1;
+  color: #43403b;
 }
 @media screen and (max-width: 800px) {
   .picture-block-heading {
