@@ -3882,6 +3882,8 @@ mark {
 .main-header nav.full .nav-item .icon-wrapper {
   display: flex;
   align-items: center;
+  font-family: "qualy";
+  text-transform: lowercase
 }
 .main-header nav.full .nav-item svg {
   margin-left: 6px;
@@ -4045,7 +4047,7 @@ mark {
 }
 .main-header nav.full .nav-item .dropdown-wrap .dropdown-item a,
 .main-header nav.full .nav-item .dropdown-wrap .dropdown-item details {
-  font-family: Poppins,sans-serif;
+  font-family: "qualy";
   font-style: normal;
   font-weight: 400;
   display: block;
@@ -12944,7 +12946,7 @@ noscript .disclosure-list--visible {
   }
 }
 .picture-block-content {
-  max-width: 55%;
+  max-width: 70%;
   text-align: center;
 }
 
