@@ -14487,7 +14487,7 @@ body:not(.user-is-tabbing) .shopify-model-viewer-ui .shopify-model-viewer-ui__bu
   flex-direction: column;
   overflow: hidden;
 
-  height: 480px;
+  height: 481px;
 }
 
 @media screen and (max-width: 720px) {
