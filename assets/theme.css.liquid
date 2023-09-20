@@ -2987,8 +2987,7 @@ main section:first-child .section-border {
 
 }
 .sub-footer nav a:hover {
-  color: {{ link_color_hover }}
-  ;
+  text-decoration: underline
 }
 .sub-footer nav .social-link {
   display: inline-block;
@@ -4634,7 +4633,6 @@ mark {
   padding: 4px 42px 7px 25px;
   font-size: 15px;
   transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-  border-bottom: 1px solid transparent;
 
 }
 .main-header nav.full .nav-item .dropdown-wrap .dropdown-item a:hover,
@@ -4642,8 +4640,7 @@ mark {
   /* opacity: 0.7; */
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
   filter: alpha(opacity=70);
-  border-bottom: 1px solid;
-
+  text-decoration: underline
 }
 .main-header nav.full .nav-item .dropdown-wrap .dropdown-item a .label,
 .main-header nav.full .nav-item .dropdown-wrap .dropdown-item a .icon,
@@ -17776,6 +17773,10 @@ img[data-rimg=loaded] {
 
 .main-footer .footer-principal .footer-menu {
   padding: 0 !important;
+}
+
+.main-footer .footer-principal .footer-menu a:hover {
+  text-decoration: underline;
 }
 
 .main-footer .footer-principal .section-title {
