@@ -14487,7 +14487,7 @@ body:not(.user-is-tabbing) .shopify-model-viewer-ui .shopify-model-viewer-ui__bu
   flex-direction: column;
   overflow: hidden;
 
-  height: 560px;
+  height: 480px;
 }
 
 @media screen and (max-width: 720px) {
@@ -14555,7 +14555,8 @@ object-fit: cover;
   .product-grid-default .product-card-figure img:first-of-type {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
   }
 }
 @supports (object-fit: cover) {
