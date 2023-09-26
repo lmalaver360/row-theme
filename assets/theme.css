@@ -15995,6 +15995,7 @@ img[data-rimg=loaded] {
 }
 .collectionSlider__slider .product-card-figure img:last-of-type{
   transform: none;
+  object-fit: cover;
 }
 
 
