@@ -24,7 +24,7 @@
         "0a74db39-733f-4969-81c9-7e94efc583ff": {
           "type": "shopify:\/\/apps\/simple-marquee\/blocks\/marquee\/1c87af44-fdf4-422c-b308-97ab9586a4c4",
           "settings": {
-            "text": "your hotline for cur 1-800-shoprow",
+            "text": "row is now open",
             "color_scheme": "accent-1",
             "height": 82,
             "style": "body",
@@ -49,7 +49,7 @@
     "dynamic-collection-1": {
       "type": "dynamic-collection",
       "settings": {
-        "collection": "",
+        "collection": "books",
         "title": "Featured collection",
         "border": false,
         "rows": 1,
@@ -60,7 +60,7 @@
       "type": "dynamic-collection-slider",
       "settings": {
         "image": "shopify:\/\/shop_images\/image_2_1.png",
-        "collection": "",
+        "collection": "hats",
         "title": "summer",
         "subtitle": "newness",
         "content": "<p>Say a bit about your brand, a specific product, or promotion.<\/p>"
