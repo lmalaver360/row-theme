@@ -4,7 +4,7 @@
       "type": "dynamic-image-with-text",
       "settings": {
         "margin": "regular",
-        "image": "shopify:\/\/shop_images\/IMG_0818_2.png",
+        "image": "shopify:\/\/shop_images\/hero_imge.jpg",
         "alignment": "left",
         "desktop_height": "natural",
         "mobile_height": "natural",
@@ -59,9 +59,9 @@
     "ecebc0be-7de2-451c-9746-2f9bca83edbf": {
       "type": "dynamic-collection-slider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/image_2_1.png",
+        "image": "shopify:\/\/shop_images\/hats_image.jpg",
         "collection": "hats",
-        "title": "summer",
+        "title": "",
         "subtitle": "newness",
         "content": "<p>Say a bit about your brand, a specific product, or promotion.<\/p>"
       }
