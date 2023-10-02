@@ -688,9 +688,13 @@ line-height: normal;
   color: #b7a490;
   font-family: "qualy" !important;
   font-style: normal;
-font-weight: 400;
-line-height: normal;
+  font-weight: 400;
+  line-height: normal;
 
+}
+
+.btn-solid--secondary[disabled]{
+    pointer-events: none;
 }
 
 .btn-solid--tertiary {
@@ -10060,6 +10064,10 @@ html:not(.header-layout-minimal) .shopify-section:first-of-type .home-section.sl
   cursor: default;
   background-color: #ede8e3;
   border-color: #ede8e3;
+  color:#b7a490;
+  font-weight: 400;
+  font-family: "qualy";
+  font-size: 14px;
 }
 
 .product__brand {
@@ -12801,7 +12809,7 @@ noscript .disclosure-list--visible {
 .picture-block.picture-block--desktop-height-extra-large .picture-block-image {
   height: 800px;
 }
-@media (min-width: 720px) {
+@media (min-width: 1400px) {
   .picture-block.picture-block--desktop-height-natural .picture-block-image {
     height: 832px
   }
@@ -12824,6 +12832,14 @@ noscript .disclosure-list--visible {
     }
   }
 }
+
+@media (max-width: 1399px) {
+  .picture-block.picture-block--desktop-height-natural .picture-block-image {
+    height: calc(100vh - 98px)
+  }
+}
+
+
 @media (max-width: 719px) {
   .picture-block.picture-block--mobile-height-small .picture-block-image {
     height: 300px;
@@ -12945,6 +12961,17 @@ noscript .disclosure-list--visible {
   font-size: clamp(48px, 5vw, 84px);
   line-height: 1.1;
   color: #43403b;
+}
+
+@media (max-width: 1399px) {
+
+  .picture-block-heading{
+    margin: 60px 0;
+    font-size: clamp(48px, 4vw, 84px);
+  }
+  .picture-block-content{
+    max-width: 60%;
+  }
 }
 @media screen and (max-width: 800px) {
   .picture-block-heading {
@@ -14332,7 +14359,7 @@ body:not(.user-is-tabbing) .shopify-model-viewer-ui .shopify-model-viewer-ui__bu
 .product-card-details .title {
   margin-top: 5px;
   margin-bottom: 9px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
 
 }
@@ -14433,6 +14460,9 @@ body:not(.user-is-tabbing) .shopify-model-viewer-ui .shopify-model-viewer-ui__bu
 .addtocart-button-active .product-card-interaction-addtocart-available {
   display: flex;
   justify-content: center;
+  font-weight: 400;
+  font-family: "qualy";
+  font-size: 14px;
 }
 
 .product-card-interaction-addtocart-error {
