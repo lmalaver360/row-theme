@@ -92,12 +92,21 @@
             "link": "",
             "link_label": "elise's picks"
           }
+        },
+        "8e6774e6-96d5-4b0a-9003-555068a29141": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hats_image.jpg",
+            "link": "",
+            "link_label": "Button"
+          }
         }
       },
       "block_order": [
         "43582c02-6ff4-46d1-98db-9b367b472b70",
         "28fb2b92-6cd1-4c9c-96fb-144819f42abf",
-        "72fe4653-23e7-4898-b2bf-d05b87110f2c"
+        "72fe4653-23e7-4898-b2bf-d05b87110f2c",
+        "8e6774e6-96d5-4b0a-9003-555068a29141"
       ],
       "settings": {
         "static": false,
