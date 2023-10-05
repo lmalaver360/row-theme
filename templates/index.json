@@ -108,14 +108,6 @@
             "link": "",
             "link_label": "Button"
           }
-        },
-        "59924d4f-9fa6-4614-a005-d8f4382a8540": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/home_decor.jpg",
-            "link": "",
-            "link_label": "Button"
-          }
         }
       },
       "block_order": [
@@ -123,8 +115,7 @@
         "28fb2b92-6cd1-4c9c-96fb-144819f42abf",
         "72fe4653-23e7-4898-b2bf-d05b87110f2c",
         "ffaf2243-a1ae-467b-842b-b23502ff84f7",
-        "83fc8e5f-8f7a-4b84-bc24-4a9f2e78a28a",
-        "59924d4f-9fa6-4614-a005-d8f4382a8540"
+        "83fc8e5f-8f7a-4b84-bc24-4a9f2e78a28a"
       ],
       "settings": {
         "static": false,
