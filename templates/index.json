@@ -13,7 +13,7 @@
         "background-colour": "#c1cdaa",
         "title": "A COLLECTION OF CURIOUS OBJECTS.",
         "content": "",
-        "button_link": "",
+        "button_link": "shopify:\/\/collections\/new-arrivals",
         "button_label": "explore",
         "button_style": "tertiary"
       }
@@ -49,8 +49,8 @@
     "dynamic-collection-1": {
       "type": "dynamic-collection",
       "settings": {
-        "collection": "books",
-        "title": "Featured collection",
+        "collection": "new-arrivals",
+        "title": "new arrivals",
         "border": false,
         "rows": 1,
         "products_per_row": 3
