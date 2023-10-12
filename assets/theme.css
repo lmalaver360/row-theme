@@ -4189,6 +4189,10 @@ mark {
   color: #ffffff;
   background-color: #052422;
   transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-family: 'qualy';
+  font-style: normal;
+  font-weight: 400;
 }
 .mega-nav .list .list-item a:hover {
   opacity: 0.7;
