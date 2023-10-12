@@ -3660,7 +3660,14 @@ mark {
 .header-minimal nav.full ul {
   text-align: left;
   white-space: normal;
+  
 }
+
+.mega-nav ul.list-wrap{
+  display: flex;
+  flex-direction: column;
+}
+
 .header-minimal nav.full .nav-item .label::before {
   display: none;
 }
@@ -4397,6 +4404,7 @@ mark {
   pointer-events: all;
   visibility: visible;
   opacity: 1;
+  width: max-content;
 }
 
 .main-header--minimal nav.compact {
@@ -4683,11 +4691,17 @@ mark {
   top: auto;
   left: 0;
   margin-top: 0;
+
+  left: auto;
+  right: auto;
 }
 .mega-nav .mega-nav-wrap {
   position: relative;
   left: -5px;
   padding: 0;
+  width: 100%;
+    max-width: 218px;
+    min-width: 218px;
 }
 .mega-nav .mega-nav-list {
   display: flex;
@@ -4724,7 +4738,7 @@ mark {
   padding-right: 15px;
   padding-left: 15px;
   margin-top: 25px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   vertical-align: top;
   background-color: {{ settings.nav-background-colour }}
   ;
@@ -4759,7 +4773,7 @@ mark {
 }
 .mega-nav .list .list-item {
   display: inline-block;
-  width: 50%;
+  /* width: 50%; */
   padding-right: 10px;
   margin: 0 -4px 9px 0;
   vertical-align: top;
