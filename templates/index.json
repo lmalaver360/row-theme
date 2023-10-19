@@ -69,14 +69,6 @@
     "7d670c5b-4504-4faf-88bb-b4f0bb39a0c1": {
       "type": "dynamic-slider",
       "blocks": {
-        "72fe4653-23e7-4898-b2bf-d05b87110f2c": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/elyses_picks.jpg",
-            "link": "",
-            "link_label": "elise's picks"
-          }
-        },
         "83fc8e5f-8f7a-4b84-bc24-4a9f2e78a28a": {
           "type": "feature",
           "settings": {
@@ -101,6 +93,14 @@
             "link_label": "accessories"
           }
         },
+        "72fe4653-23e7-4898-b2bf-d05b87110f2c": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elyses_picks.jpg",
+            "link": "",
+            "link_label": "elise's picks"
+          }
+        },
         "ffaf2243-a1ae-467b-842b-b23502ff84f7": {
           "type": "feature",
           "settings": {
@@ -111,10 +111,10 @@
         }
       },
       "block_order": [
-        "72fe4653-23e7-4898-b2bf-d05b87110f2c",
         "83fc8e5f-8f7a-4b84-bc24-4a9f2e78a28a",
         "28fb2b92-6cd1-4c9c-96fb-144819f42abf",
         "43582c02-6ff4-46d1-98db-9b367b472b70",
+        "72fe4653-23e7-4898-b2bf-d05b87110f2c",
         "ffaf2243-a1ae-467b-842b-b23502ff84f7"
       ],
       "settings": {
