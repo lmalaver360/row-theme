@@ -104,7 +104,7 @@
           "type": "feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/elyses_picks.jpg",
-            "link": "",
+            "link": "shopify:\/\/collections\/elises-picks",
             "link_label": "elise's picks"
           }
         }
