@@ -4,7 +4,7 @@
       "type": "dynamic-image-with-text",
       "settings": {
         "margin": "regular",
-        "image": "shopify:\/\/shop_images\/Tezza-9445_2.jpg",
+        "image": "shopify:\/\/shop_images\/Tezza-3683.jpg",
         "alignment": "left",
         "desktop_height": "natural",
         "mobile_height": "natural",
@@ -23,11 +23,11 @@
         "0a74db39-733f-4969-81c9-7e94efc583ff": {
           "type": "shopify:\/\/apps\/simple-marquee\/blocks\/marquee\/1c87af44-fdf4-422c-b308-97ab9586a4c4",
           "settings": {
-            "text": "row is now open",
+            "text": "Call us for all your gifting needs (305) 204-1778",
             "color_scheme": "accent-1",
             "height": 82,
             "style": "body",
-            "size": "large",
+            "size": "medium",
             "duration": 300,
             "gap": 120,
             "stop_on_hover": true
