@@ -4,7 +4,7 @@
       "type": "dynamic-image-with-text",
       "settings": {
         "margin": "regular",
-        "image": "shopify:\/\/shop_images\/IMG_7853.jpg",
+        "image": "shopify:\/\/shop_images\/Tezza-9271.heic",
         "alignment": "left",
         "desktop_height": "natural",
         "mobile_height": "natural",
@@ -12,8 +12,8 @@
         "background-colour": "#f8a29d",
         "title": "Spread The Love",
         "content": "",
-        "button_link": "shopify:\/\/collections\/new-arrivals",
-        "button_label": "explore",
+        "button_link": "shopify:\/\/collections\/valentines",
+        "button_label": "Love",
         "button_style": "tertiary"
       }
     },
