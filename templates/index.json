@@ -4,16 +4,16 @@
       "type": "dynamic-image-with-text",
       "settings": {
         "margin": "regular",
-        "image": "shopify:\/\/shop_images\/carmina_india_aya_laguna_aw22_candle_holders_1296x_0f04e3b0-cc07-4252-a2f4-79f7e6bf8107.webp",
+        "image": "shopify:\/\/shop_images\/Tezza-8196.heic",
         "alignment": "left",
         "desktop_height": "natural",
         "mobile_height": "natural",
         "parallax": false,
         "background-colour": "#f8ebe0",
-        "title": "Elevate your home",
+        "title": "Summer Sale",
         "content": "",
-        "button_link": "shopify:\/\/collections\/new-arrivals",
-        "button_label": "Shop now",
+        "button_link": "shopify:\/\/collections\/summer-sale",
+        "button_label": "Shop Sale",
         "button_style": "tertiary"
       }
     },
