@@ -4,15 +4,15 @@
       "type": "dynamic-image-with-text",
       "settings": {
         "margin": "regular",
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2024-04-30_at_5.09.58_PM.png",
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2024-05-21_at_10.32.41_AM.png",
         "alignment": "left",
         "desktop_height": "natural",
         "mobile_height": "natural",
         "parallax": false,
-        "background-colour": "#fde2e6",
-        "title": "Gifts for Mom",
+        "background-colour": "#c3ccac",
+        "title": "Upgrade your summer soirée",
         "content": "",
-        "button_link": "shopify:\/\/collections\/summer-collection",
+        "button_link": "shopify:\/\/collections\/dining-entertaining",
         "button_label": "Shop Now",
         "button_style": "tertiary"
       }
