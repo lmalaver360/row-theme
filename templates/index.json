@@ -1,18 +1,27 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "dynamic-image-with-text-1": {
       "type": "dynamic-image-with-text",
       "settings": {
         "margin": "regular",
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2024-05-21_at_10.32.41_AM.png",
+        "image": "shopify://shop_images/DSCN0868.jpg",
         "alignment": "left",
         "desktop_height": "natural",
         "mobile_height": "natural",
         "parallax": false,
         "background-colour": "#c3ccac",
-        "title": "Upgrade your summer soirée",
+        "title": "Everything you need this holiday season",
         "content": "",
-        "button_link": "shopify:\/\/collections\/dining-entertaining",
+        "button_link": "shopify://collections/dining-entertaining",
         "button_label": "Shop Now",
         "button_style": "tertiary"
       }
@@ -21,7 +30,7 @@
       "type": "apps",
       "blocks": {
         "0a74db39-733f-4969-81c9-7e94efc583ff": {
-          "type": "shopify:\/\/apps\/simple-marquee\/blocks\/marquee\/1c87af44-fdf4-422c-b308-97ab9586a4c4",
+          "type": "shopify://apps/simple-marquee/blocks/marquee/1c87af44-fdf4-422c-b308-97ab9586a4c4",
           "settings": {
             "text": "Call us for all your gifting needs (305) 204-1778",
             "color_scheme": "accent-1",
@@ -58,7 +67,7 @@
     "ecebc0be-7de2-451c-9746-2f9bca83edbf": {
       "type": "dynamic-collection-slider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/fbc481d01029089bdea706e378a4134a.webp",
+        "image": "shopify://shop_images/fbc481d01029089bdea706e378a4134a.webp",
         "collection": "lobject",
         "title": "Taschen",
         "subtitle": "newness",
@@ -71,7 +80,7 @@
         "83fc8e5f-8f7a-4b84-bc24-4a9f2e78a28a": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DSCN0612.jpg",
+            "image": "shopify://shop_images/DSCN0612.jpg",
             "link": "",
             "link_label": "vases"
           }
@@ -79,7 +88,7 @@
         "ffaf2243-a1ae-467b-842b-b23502ff84f7": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hats_image.jpg",
+            "image": "shopify://shop_images/hats_image.jpg",
             "link": "",
             "link_label": "hats"
           }
@@ -87,7 +96,7 @@
         "28fb2b92-6cd1-4c9c-96fb-144819f42abf": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/home_decor.jpg",
+            "image": "shopify://shop_images/home_decor.jpg",
             "link": "",
             "link_label": "home decor"
           }
@@ -95,7 +104,7 @@
         "43582c02-6ff4-46d1-98db-9b367b472b70": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/accessories.jpg",
+            "image": "shopify://shop_images/accessories.jpg",
             "link": "",
             "link_label": "accessories"
           }
@@ -103,8 +112,8 @@
         "72fe4653-23e7-4898-b2bf-d05b87110f2c": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/elyses_picks.jpg",
-            "link": "shopify:\/\/collections\/elises-picks",
+            "image": "shopify://shop_images/elyses_picks.jpg",
+            "link": "shopify://collections/elises-picks",
             "link_label": "elise's picks"
           }
         }
@@ -136,7 +145,7 @@
         "a0a048a8-d0ad-4f4a-989a-fdbcfb1afc05": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bendumvase2.webp",
+            "image": "shopify://shop_images/bendumvase2.webp",
             "link": "",
             "link_label": ""
           }
@@ -144,7 +153,7 @@
         "ed2a8ba2-c5a9-4ee2-b0e4-b19f9fb16a7b": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/0A8A3750.jpg",
+            "image": "shopify://shop_images/0A8A3750.jpg",
             "link": "",
             "link_label": ""
           }
@@ -152,7 +161,7 @@
         "7dfa6996-09b0-4096-9bcb-a3bc3fa9100e": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Tezza-8196.heic",
+            "image": "shopify://shop_images/Tezza-8196.heic",
             "link": "",
             "link_label": ""
           }
@@ -160,7 +169,7 @@
         "37b611a7-b6cb-4948-998f-1c45c829f07d": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DSCN0134.jpg",
+            "image": "shopify://shop_images/DSCN0134.jpg",
             "link": "",
             "link_label": ""
           }
