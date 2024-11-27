@@ -1,10 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "background-colour": "#ffffff",
     "primary-border-colour": "#ebebeb",
     "text-colour": "#052422",
     "title-colour": "#052422",
-    "accent-colour": "#b7a490",
+    "accent-colour": "#355755",
     "button-text-colour": "#ffffff",
     "logotype-link-colour": "#052422",
     "header-action-link-colour": "#052422",
@@ -17,7 +26,7 @@
     "font_headings_captialize": false,
     "font_headings_secondary": "itc_stone_sans_ii_n3",
     "font_accent": "avenir_next_n3",
-    "favicon": "shopify:\/\/shop_images\/Fav_icon_row.png",
+    "favicon": "shopify://shop_images/Fav_icon_row.png",
     "media_borders": false,
     "show-brand-names": false,
     "show_atc": false,
@@ -34,15 +43,12 @@
     "quickshop_enable_cart_redirect": false,
     "currency_display_format": "money_format",
     "show-mailing-list": true,
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },

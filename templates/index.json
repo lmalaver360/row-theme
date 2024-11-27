@@ -1,24 +1,24 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "dynamic-image-with-text-1": {
       "type": "dynamic-image-with-text",
       "settings": {
         "margin": "regular",
-        "image": "shopify://shop_images/DSCN0868.jpg",
+        "image": "shopify://shop_images/IMG_4525.jpg",
         "alignment": "left",
         "desktop_height": "natural",
         "mobile_height": "natural",
         "parallax": false,
-        "background-colour": "#c3ccac",
+        "background-colour": "#f9f5ea",
         "title": "Everything you need this holiday season",
         "content": "",
         "button_link": "shopify://collections/dining-entertaining",
@@ -46,13 +46,11 @@
       "block_order": [
         "0a74db39-733f-4969-81c9-7e94efc583ff"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "1694091944d14e9197": {
       "type": "apps",
-      "settings": {
-      }
+      "settings": {}
     },
     "dynamic-collection-1": {
       "type": "dynamic-collection",
