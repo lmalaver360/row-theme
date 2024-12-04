@@ -19,7 +19,7 @@
     "header-action-link-colour": "#052422",
     "nav-link-colour": "#b7a490",
     "nav-link-dropdown-colour": "#b7a490",
-    "nav-background-colour": "#f9f5ea",
+    "nav-background-colour": "{{ shop.brand.colors.primary[0].background }}",
     "nav-border-colour": "#dddddd",
     "font_body": "poppins_n4",
     "font_headings": "poppins_n4",
