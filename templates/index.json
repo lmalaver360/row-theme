@@ -9,23 +9,6 @@
  */
 {
   "sections": {
-    "dynamic-image-with-text-1": {
-      "type": "dynamic-image-with-text",
-      "settings": {
-        "margin": "regular",
-        "image": "shopify://shop_images/2.png",
-        "alignment": "left",
-        "desktop_height": "natural",
-        "mobile_height": "natural",
-        "parallax": false,
-        "background-colour": "#f9f5ea",
-        "title": "spread the love",
-        "content": "",
-        "button_link": "shopify://collections/new-arrivals",
-        "button_label": "Shop Now",
-        "button_style": "tertiary"
-      }
-    },
     "169505603682fec7b8": {
       "type": "apps",
       "blocks": {
@@ -47,6 +30,23 @@
         "0a74db39-733f-4969-81c9-7e94efc583ff"
       ],
       "settings": {}
+    },
+    "dynamic-image-with-text-1": {
+      "type": "dynamic-image-with-text",
+      "settings": {
+        "margin": "regular",
+        "image": "shopify://shop_images/spring.png",
+        "alignment": "left",
+        "desktop_height": "natural",
+        "mobile_height": "natural",
+        "parallax": false,
+        "background-colour": "#f9f5ea",
+        "title": "Uhooo, big summer blowout",
+        "content": "",
+        "button_link": "shopify://collections/summer-sale",
+        "button_label": "sale",
+        "button_style": "tertiary"
+      }
     },
     "1694091944d14e9197": {
       "type": "apps",
