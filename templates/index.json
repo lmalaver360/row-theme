@@ -17,7 +17,7 @@
       "type": "dynamic-image-with-text",
       "settings": {
         "margin": "regular",
-        "image": "shopify://shop_images/spring_2.png",
+        "image": "shopify://shop_images/image4.png",
         "alignment": "left",
         "desktop_height": "natural",
         "mobile_height": "natural",
