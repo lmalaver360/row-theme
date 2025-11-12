@@ -85,7 +85,7 @@
           "type": "feature",
           "settings": {
             "image": "shopify://shop_images/accessories.jpg",
-            "link": "",
+            "link": "shopify://collections/accessories",
             "link_label": "accessories"
           }
         },
