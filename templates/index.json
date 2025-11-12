@@ -61,7 +61,7 @@
           "type": "feature",
           "settings": {
             "image": "shopify://shop_images/DSCN0612.jpg",
-            "link": "",
+            "link": "shopify://collections/vases",
             "link_label": "vases"
           }
         },
