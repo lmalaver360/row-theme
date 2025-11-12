@@ -48,7 +48,7 @@
       "type": "dynamic-collection-slider",
       "settings": {
         "image": "shopify://shop_images/IMG_1345_2.jpg",
-        "collection": "new-arrivals",
+        "collection": "ferm-living",
         "title": "ferm living",
         "subtitle": "newness",
         "content": ""
