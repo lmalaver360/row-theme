@@ -37,8 +37,8 @@
     "dynamic-collection-1": {
       "type": "dynamic-collection",
       "settings": {
-        "collection": "new-arrivals",
-        "title": "new arrivals",
+        "collection": "holiday-2024",
+        "title": "holiday",
         "border": false,
         "rows": 1,
         "products_per_row": 4
