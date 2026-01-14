@@ -17,16 +17,16 @@
       "type": "dynamic-image-with-text",
       "settings": {
         "margin": "regular",
-        "image": "shopify://shop_images/Screenshot_2025-11-11_at_5.24.04_PM.png",
+        "image": "shopify://shop_images/atticavase_2.jpg",
         "alignment": "left",
         "desktop_height": "natural",
         "mobile_height": "natural",
         "parallax": false,
         "background-colour": "#f9f5ea",
-        "title": "T'is the season",
+        "title": "New Year New Goodies",
         "content": "",
-        "button_link": "shopify://collections/holiday-2024",
-        "button_label": "holiday",
+        "button_link": "shopify://collections/new-arrivals",
+        "button_label": "shop now",
         "button_style": "tertiary"
       }
     },
