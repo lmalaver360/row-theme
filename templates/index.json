@@ -17,15 +17,15 @@
       "type": "dynamic-image-with-text",
       "settings": {
         "margin": "regular",
-        "image": "shopify://shop_images/atticavase_2.jpg",
+        "image": "shopify://shop_images/14956-31_2.jpg",
         "alignment": "left",
         "desktop_height": "natural",
         "mobile_height": "natural",
         "parallax": false,
-        "background-colour": "#f9f5ea",
-        "title": "New Year New Goodies",
+        "background-colour": "#f5f1ca",
+        "title": "Spring has Sprung",
         "content": "",
-        "button_link": "shopify://collections/new-arrivals",
+        "button_link": "shopify://collections/spring",
         "button_label": "shop now",
         "button_style": "tertiary"
       }
