@@ -23,9 +23,9 @@
         "mobile_height": "natural",
         "parallax": false,
         "background-colour": "#f5f1ca",
-        "title": "Spring has Sprung",
+        "title": "Summer Sale",
         "content": "",
-        "button_link": "shopify://collections/spring",
+        "button_link": "shopify://collections/summer-sale",
         "button_label": "shop now",
         "button_style": "tertiary"
       }
