@@ -24,7 +24,7 @@
         "parallax": false,
         "background-colour": "#f5f1ca",
         "title": "30% off sitewide",
-        "content": "<p>Thanks for coming along for the ride</p>",
+        "content": "<p>Thanks for coming along for the ride.</p><p>code: goodbye30</p>",
         "button_link": "shopify://collections/elises-picks",
         "button_label": "shop now",
         "button_style": "tertiary"
