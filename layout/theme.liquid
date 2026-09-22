@@ -95,7 +95,7 @@
     Theme.shippingCalcRateValues = "{{ 'cart.shipping_calculator.rate_values_html' | t | strip_newlines | replace: '"','\\"' }}";
     Theme.userLoggedIn = {% if shop.customer_accounts_enabled and customer %}true{% else %} false{% endif %};
     Theme.userAddress = '{% if shop.customer_accounts_enabled and customer %}{{ customer.default_address }}{% endif %}';
-    Theme.centerHeader = {% if settings.center - header %}true{% else %} false{% endif %};
+    Theme.centerHeader = {% if settings.center %}true{% else %} false{% endif %};
 
     Theme.cartItemsOne = "{{ 'layout.header.item_count.one' | t | strip_newlines | escape }}";
     Theme.cartItemsOther = "{{ 'layout.header.item_count.other' | t | strip_newlines | escape }}";
@@ -237,4 +237,13 @@
   </script>
 </body>
 
-</html>
+</html>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% if settings.center - header %}"
+  to: "{% if settings.center %}"
+  position: 4304..4328
+{%- endcomment -%}
